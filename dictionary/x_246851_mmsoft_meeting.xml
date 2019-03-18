@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Meeting" max_length="40" name="x_246851_mmsoft_meeting" type="collection">
+        <element label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element label="Owner" max_length="40" name="u_owner" type="string_full_utf8"/>
+        <element label="Project" max_length="32" name="u_project" reference="x_246851_mmsoft_project" type="reference"/>
+        <element label="Time End" max_length="40" name="u_time_end" type="glide_time"/>
+        <element label="Time Start" mandatory="true" max_length="40" name="u_time_start" type="glide_time"/>
+        <element label="Title" max_length="40" name="u_title" type="string_full_utf8"/>
+        <index name="index">
+            <element name="u_project"/>
+        </index>
+    </element>
+</database>

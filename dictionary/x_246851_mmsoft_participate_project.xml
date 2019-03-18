@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Participate Project" max_length="40" name="x_246851_mmsoft_participate_project" type="collection">
+        <element label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element label="Employee" max_length="32" name="u_employee" reference="x_246851_mmsoft_employee" type="reference"/>
+        <element label="End Date" max_length="40" name="u_end_date" type="glide_date"/>
+        <element label="Project" max_length="32" name="u_project" reference="x_246851_mmsoft_project" type="reference"/>
+        <element label="Start Date" max_length="40" name="u_start_date" type="glide_date"/>
+        <index name="index">
+            <element name="u_employee"/>
+        </index>
+        <index name="index2">
+            <element name="u_project"/>
+        </index>
+    </element>
+</database>

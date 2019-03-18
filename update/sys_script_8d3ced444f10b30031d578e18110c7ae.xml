@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_246851_mmsoft_timesheet_task</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update Timesheet' Week day Working Hours</name>
+        <order>200</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	//Update Hour for fields in Timesheet
+	var total_hour = current.u_total_hour;
+	var week_day = current.u_day_of_the_week;
+	if(current.u_total_hour && total_hour != 0){
+		var grTSheet = new GlideRecord("x_246851_mmsoft_timesheet");
+		grTSheet.get(current.u_timesheet);
+		if(week_day == "monday")
+			grTSheet.u_mon = total_hour;
+		else if(week_day == "tuesday")
+			grTSheet.u_tue = total_hour;
+		else if(week_day == "wednesday")
+			grTSheet.u_wed = total_hour;
+		else if(week_day == "thursday")
+			grTSheet.u_thu = total_hour;
+		else if(week_day == "friday")
+			grTSheet.u_fri = total_hour;
+		else if(week_day == "saturday")
+			grTSheet.u_sat = total_hour;
+		else if(week_day == "sunday")
+			grTSheet.u_sun = total_hour;
+		grTSheet.update();
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-03-15 09:01:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8d3ced444f10b30031d578e18110c7ae</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Update Timesheet' Week day Working Hours</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+        <sys_update_name>sys_script_8d3ced444f10b30031d578e18110c7ae</sys_update_name>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-03-15 09:34:01</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=8d3ced444f10b30031d578e18110c7ae"/>
+</record_update>

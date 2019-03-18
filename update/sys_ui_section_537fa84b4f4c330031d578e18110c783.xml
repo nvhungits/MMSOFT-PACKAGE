@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="537fa84b4f4c330031d578e18110c783" sys_domain="global" table="x_246851_mmsoft_participate_project" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_employee</element>
+            <position>0</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 08:11:00</sys_created_on>
+            <sys_id>46ce0f934f44330031d578e18110c7ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_participate_project" sys_domain="global" view="Default view">537fa84b4f4c330031d578e18110c783</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 08:11:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_project</element>
+            <position>1</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 08:11:00</sys_created_on>
+            <sys_id>cace0f934f44330031d578e18110c7ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_participate_project" sys_domain="global" view="Default view">537fa84b4f4c330031d578e18110c783</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 08:11:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_active</element>
+            <position>2</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 08:11:00</sys_created_on>
+            <sys_id>4ece0f934f44330031d578e18110c7ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_participate_project" sys_domain="global" view="Default view">537fa84b4f4c330031d578e18110c783</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 08:11:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 08:11:00</sys_created_on>
+            <sys_id>cece0f934f44330031d578e18110c7ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_participate_project" sys_domain="global" view="Default view">537fa84b4f4c330031d578e18110c783</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 08:11:00</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_start_date</element>
+            <position>4</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 08:11:00</sys_created_on>
+            <sys_id>42ce0f934f44330031d578e18110c7ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_participate_project" sys_domain="global" view="Default view">537fa84b4f4c330031d578e18110c783</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 08:11:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_end_date</element>
+            <position>5</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 08:11:00</sys_created_on>
+            <sys_id>c2ce0f934f44330031d578e18110c7ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_participate_project" sys_domain="global" view="Default view">537fa84b4f4c330031d578e18110c783</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 08:11:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_246851_mmsoft_participate_project</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-12 01:56:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>537fa84b4f4c330031d578e18110c783</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_246851_mmsoft_participate_project</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+            <sys_update_name>sys_ui_section_537fa84b4f4c330031d578e18110c783</sys_update_name>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-12 01:56:33</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

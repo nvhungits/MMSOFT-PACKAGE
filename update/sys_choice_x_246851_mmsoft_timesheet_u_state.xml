@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_state" table="x_246851_mmsoft_timesheet" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Approved</label>
+            <language>en</language>
+            <name>x_246851_mmsoft_timesheet</name>
+            <sequence/>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 10:10:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2c3a271f4f84330031d578e18110c75a</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 10:11:02</sys_updated_on>
+            <value>approved</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Draft</label>
+            <language>en</language>
+            <name>x_246851_mmsoft_timesheet</name>
+            <sequence/>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 10:10:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>101a675f4f84330031d578e18110c7ae</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 10:10:29</sys_updated_on>
+            <value>draft</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rejected</label>
+            <language>en</language>
+            <name>x_246851_mmsoft_timesheet</name>
+            <sequence/>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 10:11:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ef3a675f4f84330031d578e18110c7af</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 10:11:11</sys_updated_on>
+            <value>rejected</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Submitted</label>
+            <language>en</language>
+            <name>x_246851_mmsoft_timesheet</name>
+            <sequence/>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 10:10:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>161a675f4f84330031d578e18110c710</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 10:10:52</sys_updated_on>
+            <value>submitted</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_state</element>
+            <name>x_246851_mmsoft_timesheet</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 10:10:20</sys_created_on>
+            <sys_id>d21a675f4f84330031d578e18110c7de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_state</sys_name>
+            <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+            <sys_update_name>sys_choice_x_246851_mmsoft_timesheet_u_state</sys_update_name>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 10:10:20</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

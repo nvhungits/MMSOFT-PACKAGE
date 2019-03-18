@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Timesheet" max_length="40" name="x_246851_mmsoft_timesheet" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Comments" max_length="1000" name="u_comments" type="string"/>
+        <element label="Date End" max_length="40" name="u_date_end" type="glide_date_time"/>
+        <element label="Date Start" max_length="40" name="u_date_start" type="glide_date_time"/>
+        <element label="Fri" max_length="40" name="u_fri" type="float"/>
+        <element label="HR Manager" max_length="32" name="u_hr_manager" reference="x_246851_mmsoft_employee" type="reference"/>
+        <element label="HR Profile" max_length="32" name="u_hr_profile" reference="x_246851_mmsoft_employee" type="reference"/>
+        <element label="Mon" max_length="40" name="u_mon" type="float"/>
+        <element label="Period" max_length="40" name="u_period" type="string_full_utf8"/>
+        <element label="Sat" max_length="40" name="u_sat" type="float"/>
+        <element choice="1" label="State" max_length="40" name="u_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Approved" value="approved"/>
+                <element inactive_on_update="false" label="Draft" value="draft"/>
+                <element inactive_on_update="false" label="Rejected" value="rejected"/>
+                <element inactive_on_update="false" label="Submitted" value="submitted"/>
+            </choice>
+        </element>
+        <element label="Sun" max_length="40" name="u_sun" type="float"/>
+        <element label="Thu" max_length="40" name="u_thu" type="float"/>
+        <element label="Timesheet Approver" max_length="32" name="u_timesheet_approver" reference="x_246851_mmsoft_employee" type="reference"/>
+        <element label="Total Hours" max_length="40" name="u_total_hours" type="float"/>
+        <element label="Tue" max_length="40" name="u_tue" type="float"/>
+        <element label="Wed" max_length="40" name="u_wed" type="float"/>
+        <element label="Week Commencing" max_length="40" name="u_week_commencing" type="string_full_utf8"/>
+        <index name="index">
+            <element name="u_hr_profile"/>
+        </index>
+        <index name="index2">
+            <element name="u_hr_manager"/>
+        </index>
+        <index name="index3">
+            <element name="u_timesheet_approver"/>
+        </index>
+    </element>
+</database>

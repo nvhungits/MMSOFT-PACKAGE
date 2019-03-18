@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Timesheet Task" max_length="40" name="x_246851_mmsoft_timesheet_task" type="collection">
+        <element label="Activity" max_length="1000" name="u_activity" type="string"/>
+        <element choice="1" label="Day of the week" max_length="40" name="u_day_of_the_week" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Monday" sequence="100" value="monday"/>
+                <element inactive_on_update="false" label="Tuesday" sequence="200" value="tuesday"/>
+                <element inactive_on_update="false" label="Wednesday" sequence="300" value="wednesday"/>
+                <element inactive_on_update="false" label="Thursday" sequence="400" value="thursday"/>
+                <element inactive_on_update="false" label="Friday" sequence="500" value="friday"/>
+                <element inactive_on_update="false" label="Saturday" sequence="600" value="saturday"/>
+                <element inactive_on_update="false" label="Sunday" sequence="700" value="sunday"/>
+            </choice>
+        </element>
+        <element label="Hour" max_length="40" name="u_hour" type="float"/>
+        <element label="OT" max_length="40" name="u_ot" type="boolean"/>
+        <element label="OT Hour" max_length="40" name="u_ot_hour" type="float"/>
+        <element display="true" label="Project" max_length="40" name="u_project" reference="x_246851_mmsoft_project" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Timesheet" max_length="32" name="u_timesheet" reference="x_246851_mmsoft_timesheet" type="reference"/>
+        <element label="Total Hour" max_length="40" name="u_total_hour" type="float"/>
+        <index name="index">
+            <element name="u_timesheet"/>
+        </index>
+    </element>
+</database>

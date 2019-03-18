@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css">
+    <sp_css action="INSERT_OR_UPDATE">
+        <css>//******* RESET CSS ****//&#13;
+/* http://meyerweb.com/eric/tools/css/reset/ &#13;
+   v2.0 | 20110126&#13;
+   License: none (public domain)&#13;
+*/&#13;
+&#13;
+html, body, div, span, applet, object, iframe,&#13;
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,&#13;
+a, abbr, acronym, address, big, cite, code,&#13;
+del, dfn, em, img, ins, kbd, q, s, samp,&#13;
+small, strike, strong, sub, sup, tt, var,&#13;
+b, u, i, center,&#13;
+dl, dt, dd, ol, ul, li,&#13;
+fieldset, form, label, legend,&#13;
+table, caption, tbody, tfoot, thead, tr, th, td,&#13;
+article, aside, canvas, details, embed, &#13;
+figure, figcaption, footer, header, hgroup, &#13;
+menu, nav, output, ruby, section, summary,&#13;
+time, mark, audio, video {&#13;
+	margin: 0;&#13;
+	padding: 0;&#13;
+	border: 0;&#13;
+	font-size: 100%;&#13;
+	font: inherit;&#13;
+	vertical-align: baseline;&#13;
+}&#13;
+/* HTML5 display-role reset for older browsers */&#13;
+article, aside, details, figcaption, figure, &#13;
+footer, header, hgroup, menu, nav, section, main {&#13;
+	display: block;&#13;
+}&#13;
+body {&#13;
+	line-height: 1;&#13;
+}&#13;
+ol, ul {&#13;
+	list-style: none;&#13;
+}&#13;
+blockquote, q {&#13;
+	quotes: none;&#13;
+}&#13;
+blockquote:before, blockquote:after,&#13;
+q:before, q:after {&#13;
+	content: '';&#13;
+	content: none;&#13;
+}&#13;
+table {&#13;
+	border-collapse: collapse;&#13;
+	border-spacing: 0;&#13;
+}</css>
+        <name>MMSOFT Schedule - RESET CSS</name>
+        <sys_class_name>sp_css</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 07:11:11</sys_created_on>
+        <sys_id>7977bdc74f00730031d578e18110c746</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MMSOFT Schedule - RESET CSS</sys_name>
+        <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+        <sys_update_name>sp_css_7977bdc74f00730031d578e18110c746</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 07:11:11</sys_updated_on>
+    </sp_css>
+</record_update>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_type" table="x_246851_mmsoft_employee" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Full-time</label>
+            <language>en</language>
+            <name>x_246851_mmsoft_employee</name>
+            <sequence>100</sequence>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:48:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9cfb1f234f00730031d578e18110c7a2</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:48:15</sys_updated_on>
+            <value>Full-time</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Part-time</label>
+            <language>en</language>
+            <name>x_246851_mmsoft_employee</name>
+            <sequence>200</sequence>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:48:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0d3c1f234f00730031d578e18110c7a3</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:48:29</sys_updated_on>
+            <value>Part-time</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Contract</label>
+            <language>en</language>
+            <name>x_246851_mmsoft_employee</name>
+            <sequence>300</sequence>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:48:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>344c53ef4fcc330031d578e18110c751</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:48:42</sys_updated_on>
+            <value>Contract</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Temporary</label>
+            <language>en</language>
+            <name>x_246851_mmsoft_employee</name>
+            <sequence>400</sequence>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:48:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7f4c13634f00730031d578e18110c739</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:49:00</sys_updated_on>
+            <value>Temporary</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Commission</label>
+            <language>en</language>
+            <name>x_246851_mmsoft_employee</name>
+            <sequence>500</sequence>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:49:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>006c572f4fcc330031d578e18110c7f5</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:49:43</sys_updated_on>
+            <value>Commission</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Internship</label>
+            <language>en</language>
+            <name>x_246851_mmsoft_employee</name>
+            <sequence>600</sequence>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:49:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9d7c93634f00730031d578e18110c75c</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:49:47</sys_updated_on>
+            <value>Internship</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_type</element>
+            <name>x_246851_mmsoft_employee</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:48:07</sys_created_on>
+            <sys_id>0d3c1fef4fcc330031d578e18110c739</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_type</sys_name>
+            <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+            <sys_update_name>sys_choice_x_246851_mmsoft_employee_u_type</sys_update_name>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:48:07</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

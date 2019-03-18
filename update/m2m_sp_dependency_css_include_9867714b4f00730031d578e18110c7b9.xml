@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_css_include">
+    <m2m_sp_dependency_css_include action="INSERT_OR_UPDATE">
+        <order>200</order>
+        <sp_css_include display_value="MMSOFT Schedule - Main CSS">f147314b4f00730031d578e18110c788</sp_css_include>
+        <sp_dependency display_value="MMSOFT - Schedule">7465fd874f00730031d578e18110c775</sp_dependency>
+        <sys_class_name>m2m_sp_dependency_css_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-12 07:10:38</sys_created_on>
+        <sys_id>9867714b4f00730031d578e18110c7b9</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>MMSOFT Schedule - Main CSS.MMSOFT - Schedule</sys_name>
+        <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+        <sys_update_name>m2m_sp_dependency_css_include_9867714b4f00730031d578e18110c7b9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-12 07:16:41</sys_updated_on>
+    </m2m_sp_dependency_css_include>
+</record_update>

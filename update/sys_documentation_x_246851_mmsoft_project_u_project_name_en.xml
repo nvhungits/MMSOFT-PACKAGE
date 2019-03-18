@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_project_name" label="Name" language="en" table="x_246851_mmsoft_project">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_project_name</element>
+            <help/>
+            <hint/>
+            <label>Name</label>
+            <language>en</language>
+            <name>x_246851_mmsoft_project</name>
+            <plural>Names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-08 09:46:00</sys_created_on>
+            <sys_id>859435fd4f40330031d578e18110c758</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Name</sys_name>
+            <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+            <sys_update_name>sys_documentation_x_246851_mmsoft_project_u_project_name_en</sys_update_name>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 04:08:34</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

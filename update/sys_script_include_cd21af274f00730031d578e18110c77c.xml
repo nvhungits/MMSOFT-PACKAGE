@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_246851_mmsoft.MMSUtils</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>MMSUtils</name>
+        <script><![CDATA[var MMSUtils = Class.create();
+MMSUtils.prototype = {
+	/*
+	GET User DETAILS
+	* @id: user id
+	*/
+	getUserDetails: function(id){
+		if(id == "" || id == null || id == undefined)
+			id = this.getParameter("id");
+		var grUser = new GlideRecord("x_246851_mmsoft_employee");
+		grUser.get(id);
+		return {
+			user_id: grUser.getValue("user_name"),
+			type: grUser.getValue("u_type"),
+			title: grUser.getValue("title")
+		};
+	},
+	/*
+	GET EMPLOYEE DETAILS
+	* @id: timesheet id
+	*/
+	getEmployeeByTimesheet: function(timesheet){
+		var _log = "";
+		_log += "|------Script Include - MMSUtils - Get Employee Details";
+		if(timesheet == "" || timesheet == null || timesheet == undefined)
+			timesheet = this.getParameter("timesheet");
+		var grTSheet = new GlideRecord("x_246851_mmsoft_timesheet");
+		grTSheet.get(timesheet);
+		_log += "\nTimesheet: " + grTSheet.getValue("number");
+		_log += "\nTimesheet ID: " + timesheet;
+		var hr_profile = grTSheet.getValue("u_hr_profile");
+		var user_details = this.getUserDetails(hr_profile);
+		_log += "\nUser Details: " + user_details;
+		gs.info(_log);
+		return user_details;
+	},
+
+	type: 'MMSUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-03-14 04:13:49</sys_created_on>
+        <sys_id>cd21af274f00730031d578e18110c77c</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>MMSUtils</sys_name>
+        <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+        <sys_update_name>sys_script_include_cd21af274f00730031d578e18110c77c</sys_update_name>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-03-14 09:21:17</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="2156c1fe4f04330031d578e18110c7be" sys_domain="global" table="x_246851_mmsoft_employee" version="3" view="MMSoft">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>user_name</element>
+            <position>0</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:58:52</sys_created_on>
+            <sys_id>eaae5ba34f00730031d578e18110c770</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_employee" sys_domain="global" view="a956c1fe4f04330031d578e18110c7ba">2156c1fe4f04330031d578e18110c7be</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:58:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>first_name</element>
+            <position>1</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:58:52</sys_created_on>
+            <sys_id>62ae5ba34f00730031d578e18110c771</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_employee" sys_domain="global" view="a956c1fe4f04330031d578e18110c7ba">2156c1fe4f04330031d578e18110c7be</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:58:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>last_name</element>
+            <position>2</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:58:52</sys_created_on>
+            <sys_id>e6ae5ba34f00730031d578e18110c771</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_employee" sys_domain="global" view="a956c1fe4f04330031d578e18110c7ba">2156c1fe4f04330031d578e18110c7be</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:58:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>title</element>
+            <position>3</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:58:52</sys_created_on>
+            <sys_id>6eae5ba34f00730031d578e18110c771</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_employee" sys_domain="global" view="a956c1fe4f04330031d578e18110c7ba">2156c1fe4f04330031d578e18110c7be</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:58:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_type</element>
+            <position>4</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:58:52</sys_created_on>
+            <sys_id>e2ae5ba34f00730031d578e18110c772</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_employee" sys_domain="global" view="a956c1fe4f04330031d578e18110c7ba">2156c1fe4f04330031d578e18110c7be</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:58:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>user_password</element>
+            <position>5</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:58:52</sys_created_on>
+            <sys_id>6aae5ba34f00730031d578e18110c772</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_employee" sys_domain="global" view="a956c1fe4f04330031d578e18110c7ba">2156c1fe4f04330031d578e18110c7be</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:58:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>password_needs_reset</element>
+            <position>6</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:58:52</sys_created_on>
+            <sys_id>eeae5ba34f00730031d578e18110c772</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_employee" sys_domain="global" view="a956c1fe4f04330031d578e18110c7ba">2156c1fe4f04330031d578e18110c7be</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:58:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>locked_out</element>
+            <position>7</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:58:52</sys_created_on>
+            <sys_id>66ae5ba34f00730031d578e18110c773</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_employee" sys_domain="global" view="a956c1fe4f04330031d578e18110c7ba">2156c1fe4f04330031d578e18110c7be</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:58:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>8</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:58:52</sys_created_on>
+            <sys_id>eaae5ba34f00730031d578e18110c773</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_employee" sys_domain="global" view="a956c1fe4f04330031d578e18110c7ba">2156c1fe4f04330031d578e18110c7be</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:58:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>9</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:58:52</sys_created_on>
+            <sys_id>62ae5ba34f00730031d578e18110c774</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_employee" sys_domain="global" view="a956c1fe4f04330031d578e18110c7ba">2156c1fe4f04330031d578e18110c7be</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:58:52</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email</element>
+            <position>10</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:58:52</sys_created_on>
+            <sys_id>e6ae5ba34f00730031d578e18110c774</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_employee" sys_domain="global" view="a956c1fe4f04330031d578e18110c7ba">2156c1fe4f04330031d578e18110c7be</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:58:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>preferred_language</element>
+            <position>11</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:58:52</sys_created_on>
+            <sys_id>6eae5ba34f00730031d578e18110c774</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_employee" sys_domain="global" view="a956c1fe4f04330031d578e18110c7ba">2156c1fe4f04330031d578e18110c7be</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:58:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>time_zone</element>
+            <position>12</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:58:52</sys_created_on>
+            <sys_id>e2ae5ba34f00730031d578e18110c775</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_employee" sys_domain="global" view="a956c1fe4f04330031d578e18110c7ba">2156c1fe4f04330031d578e18110c7be</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:58:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date_format</element>
+            <position>13</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:58:52</sys_created_on>
+            <sys_id>6aae5ba34f00730031d578e18110c775</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_employee" sys_domain="global" view="a956c1fe4f04330031d578e18110c7ba">2156c1fe4f04330031d578e18110c7be</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:58:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>phone</element>
+            <position>14</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:58:52</sys_created_on>
+            <sys_id>eeae5ba34f00730031d578e18110c775</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_employee" sys_domain="global" view="a956c1fe4f04330031d578e18110c7ba">2156c1fe4f04330031d578e18110c7be</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:58:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>mobile_phone</element>
+            <position>15</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:58:52</sys_created_on>
+            <sys_id>66ae5ba34f00730031d578e18110c776</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_employee" sys_domain="global" view="a956c1fe4f04330031d578e18110c7ba">2156c1fe4f04330031d578e18110c7be</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:58:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>photo</element>
+            <position>16</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-14 03:58:52</sys_created_on>
+            <sys_id>eaae5ba34f00730031d578e18110c776</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_employee" sys_domain="global" view="a956c1fe4f04330031d578e18110c7ba">2156c1fe4f04330031d578e18110c7be</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-14 03:58:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_246851_mmsoft_employee</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-11 08:57:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2156c1fe4f04330031d578e18110c7be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_246851_mmsoft_employee</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+            <sys_update_name>sys_ui_section_2156c1fe4f04330031d578e18110c7be</sys_update_name>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-11 08:57:53</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="MMSoft" name="MMSoft">a956c1fe4f04330031d578e18110c7ba</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

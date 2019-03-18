@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_246851_mmsoft_employee" version="2" view="MMSoft">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Employee - MMSoft" name="x_246851_mmsoft_employee" related_list="NULL" sys_domain="global" view="a956c1fe4f04330031d578e18110c7ba">932027d34f84330031d578e18110c79c</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>sys_user_has_role.user</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 09:26:59</sys_created_on>
+            <sys_id>532027d34f84330031d578e18110c79d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 09:26:59</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Employee - MMSoft" name="x_246851_mmsoft_employee" related_list="NULL" sys_domain="global" view="a956c1fe4f04330031d578e18110c7ba">932027d34f84330031d578e18110c79c</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>sys_user_grmember.user</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 09:26:59</sys_created_on>
+            <sys_id>9b2027d34f84330031d578e18110c79d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 09:26:59</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Employee - MMSoft" name="x_246851_mmsoft_employee" related_list="NULL" sys_domain="global" view="a956c1fe4f04330031d578e18110c7ba">932027d34f84330031d578e18110c79c</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>sys_user_delegate.user</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 09:26:59</sys_created_on>
+            <sys_id>9f2027d34f84330031d578e18110c79d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 09:26:59</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Employee - MMSoft" name="x_246851_mmsoft_employee" related_list="NULL" sys_domain="global" view="a956c1fe4f04330031d578e18110c7ba">932027d34f84330031d578e18110c79c</list_id>
+            <order_by/>
+            <position>3</position>
+            <related_list>x_246851_mmsoft_participate_project.u_employee</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 09:26:59</sys_created_on>
+            <sys_id>932027d34f84330031d578e18110c79e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 09:26:59</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Employee - MMSoft</calculated_name>
+            <filter/>
+            <name>x_246851_mmsoft_employee</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 09:26:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>932027d34f84330031d578e18110c79c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Employee - MMSoft</sys_name>
+            <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+            <sys_update_name>sys_ui_related_x_246851_mmsoft_employee_MMSoft</sys_update_name>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 09:26:59</sys_updated_on>
+            <sys_user/>
+            <view display_value="MMSoft" name="MMSoft">a956c1fe4f04330031d578e18110c7ba</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

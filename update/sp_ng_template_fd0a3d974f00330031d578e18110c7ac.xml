@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_ng_template">
+    <sp_ng_template action="INSERT_OR_UPDATE">
+        <id>mmsDailyReportTemplate</id>
+        <sp_widget display_value="MMSOFT Dashboard Widget">eb2e23ae4f00330031d578e18110c78d</sp_widget>
+        <sys_class_name>sp_ng_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-13 02:01:05</sys_created_on>
+        <sys_id>fd0a3d974f00330031d578e18110c7ac</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>mmsDailyReportTemplate</sys_name>
+        <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+        <sys_update_name>sp_ng_template_fd0a3d974f00330031d578e18110c7ac</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-14 03:27:06</sys_updated_on>
+        <template><![CDATA[<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <th>Full Name</th>
+      <th ng-repeat="day in data.daysOfTheWeek">
+        <div>{{day.label}}</div>
+        <small>{{day.date}}</small>
+      </th>
+    </thead>
+    <tbody>
+      <tr ng-repeat="staff in data.staffs">
+        <td>
+          <div class="username">
+            {{staff.name}}
+          </div>
+        </td>
+        <td ng-repeat="day in data.daysOfTheWeek">
+          <div ng-repeat="dailyReport in staff.dailyReports" ng-if="dailyReport.date == day.date" class="panel panel-primary">
+            <div class="panel panel-body">
+              <h4>Yesterday</h4>
+              <div ng-bind-html="dailyReport.yesterday" class="activity"></div>
+              <h4>Today</h4>
+              <div ng-bind-html="dailyReport.today" class="activity"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>]]></template>
+    </sp_ng_template>
+</record_update>

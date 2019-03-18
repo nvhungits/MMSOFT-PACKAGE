@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope) {
+  var c = this;
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.panel{
+  margin-bottom:0px;
+}
+.activity{
+  width:200px;
+}
+.username{
+  width:200px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>MMSOFT Dashboard Widget</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+
+	var dayNames = ["", 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday','Sunday'];
+	var date = new GlideDateTime();
+	//date.setDisplayValue("2019-03-4");
+	//console.log("Date Current: " + date.getLocalDate());
+	var indexCurrent = date.getDayOfWeekLocalTime();
+	//console.log("indexCurrent: " + indexCurrent);
+	var DaysOfTheWeek = data.daysOfTheWeek = [];
+	for(var index = (1 - indexCurrent); index <= (7 - indexCurrent); index++){
+		//console.log("index: " + index);
+		var dateNext = new GlideDateTime();
+		dateNext.setDisplayValue(date.getLocalDate());
+		dateNext.addDaysLocalTime(index);
+		var dateCurrent = dateNext.getLocalDate();
+		//console.log("dateCurrent: " + dateCurrent);
+		DaysOfTheWeek.push({
+			date: dateCurrent.toString(),
+			label: dayNames[dateNext.getDayOfWeekLocalTime()]
+		});
+	}
+
+	var staffs = data.staffs = [];
+
+	var queryString = "staffISNOTEMPTY";
+	queryString += "^date>=javascript:gs.dateGenerate('" + DaysOfTheWeek[0].date + "','end')";
+	queryString += "^date<=javascript:gs.dateGenerate('" + 
+		DaysOfTheWeek[DaysOfTheWeek.length - 1].date + "','start')";
+	console.log("queryString: " + queryString);
+	var acts = new GlideRecord("x_246851_mmsoft_staff_activity");
+	acts.addEncodedQuery(queryString);
+	acts.orderBy("staff");
+	acts.query();
+	var staffId = "", staffIndex = -1;
+	while(acts.next()){
+		if(staffId != acts.getValue("staff")){
+			staffIndex++;
+			staffId = acts.getValue("staff");
+			staffs.push({
+				id: staffId,
+				name: acts.getDisplayValue("staff"),
+				dailyReports: []
+			});
+		}
+		if(staffIndex > -1){
+			staffs[staffIndex].dailyReports.push({
+				date: acts.getDisplayValue("date"),
+				yesterday: acts.getValue("yesterday"),
+				today: acts.getValue("today")
+			});
+		}
+	}
+
+	var contracts = data.contracts = [];
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-11 02:33:43</sys_created_on>
+        <sys_id>eb2e23ae4f00330031d578e18110c78d</sys_id>
+        <sys_mod_count>103</sys_mod_count>
+        <sys_name>MMSOFT Dashboard Widget</sys_name>
+        <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+        <sys_update_name>sp_widget_eb2e23ae4f00330031d578e18110c78d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-14 03:24:39</sys_updated_on>
+        <template><![CDATA[<ng-include src="'mmsDailyReportTemplate'" />]]></template>
+    </sp_widget>
+</record_update>

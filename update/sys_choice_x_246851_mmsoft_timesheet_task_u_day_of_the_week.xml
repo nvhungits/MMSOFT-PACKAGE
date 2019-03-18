@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_day_of_the_week" table="x_246851_mmsoft_timesheet_task" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_day_of_the_week</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Monday</label>
+            <language>en</language>
+            <name>x_246851_mmsoft_timesheet_task</name>
+            <sequence>100</sequence>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 10:20:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b57c6f5f4f84330031d578e18110c79b</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 10:21:31</sys_updated_on>
+            <value>monday</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_day_of_the_week</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Tuesday</label>
+            <language>en</language>
+            <name>x_246851_mmsoft_timesheet_task</name>
+            <sequence>200</sequence>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 10:21:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>177c6f5f4f84330031d578e18110c79c</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 10:21:56</sys_updated_on>
+            <value>tuesday</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_day_of_the_week</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wednesday</label>
+            <language>en</language>
+            <name>x_246851_mmsoft_timesheet_task</name>
+            <sequence>300</sequence>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 10:22:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c6bca3df4f84330031d578e18110c753</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 10:22:08</sys_updated_on>
+            <value>wednesday</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_day_of_the_week</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Thursday</label>
+            <language>en</language>
+            <name>x_246851_mmsoft_timesheet_task</name>
+            <sequence>400</sequence>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 10:22:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>edccab5f4f84330031d578e18110c71d</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 10:22:21</sys_updated_on>
+            <value>thursday</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_day_of_the_week</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Friday</label>
+            <language>en</language>
+            <name>x_246851_mmsoft_timesheet_task</name>
+            <sequence>500</sequence>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 10:22:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e0dc67df4f84330031d578e18110c743</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 10:22:29</sys_updated_on>
+            <value>friday</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_day_of_the_week</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Saturday</label>
+            <language>en</language>
+            <name>x_246851_mmsoft_timesheet_task</name>
+            <sequence>600</sequence>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 10:22:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4bdce7df4f84330031d578e18110c7aa</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 10:22:46</sys_updated_on>
+            <value>saturday</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_day_of_the_week</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Sunday</label>
+            <language>en</language>
+            <name>x_246851_mmsoft_timesheet_task</name>
+            <sequence>700</sequence>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 10:22:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eaece7df4f84330031d578e18110c7fa</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 10:22:54</sys_updated_on>
+            <value>sunday</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_day_of_the_week</element>
+            <name>x_246851_mmsoft_timesheet_task</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-03-13 10:20:47</sys_created_on>
+            <sys_id>1f7c6b5f4f84330031d578e18110c7db</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_day_of_the_week</sys_name>
+            <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+            <sys_update_name>sys_choice_x_246851_mmsoft_timesheet_task_u_day_of_the_week</sys_update_name>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-03-13 10:20:47</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

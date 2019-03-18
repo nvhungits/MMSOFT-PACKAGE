@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_user" label="Employee" max_length="40" name="x_246851_mmsoft_employee" type="collection">
+        <element choice="1" label="Type" max_length="40" name="u_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Full-time" sequence="100" value="Full-time"/>
+                <element inactive_on_update="false" label="Part-time" sequence="200" value="Part-time"/>
+                <element inactive_on_update="false" label="Contract" sequence="300" value="Contract"/>
+                <element inactive_on_update="false" label="Temporary" sequence="400" value="Temporary"/>
+                <element inactive_on_update="false" label="Commission" sequence="500" value="Commission"/>
+                <element inactive_on_update="false" label="Internship" sequence="600" value="Internship"/>
+            </choice>
+        </element>
+    </element>
+</database>

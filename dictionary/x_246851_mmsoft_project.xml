@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Project" max_length="40" name="x_246851_mmsoft_project" type="collection">
+        <element label="Company" max_length="32" name="u_company" reference="x_246851_mmsoft_company" type="reference"/>
+        <element label="Description" max_length="1000" name="u_description" type="string_full_utf8"/>
+        <element display="true" label="Name" max_length="40" name="u_project_name" type="string_full_utf8"/>
+        <index name="index">
+            <element name="u_company"/>
+        </index>
+    </element>
+</database>
