@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element extends="sys_user" label="Employee" max_length="40" name="x_246851_mmsoft_employee" type="collection">
+        <element label="Manager" max_length="32" name="u_manager" reference="x_246851_mmsoft_employee" type="reference"/>
+        <element choice="1" label="Team" max_length="40" name="u_team" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Growthops" sequence="0" value="growthops"/>
+                <element inactive_on_update="false" label="Mobile" sequence="1" value="mobile"/>
+            </choice>
+        </element>
         <element choice="1" label="Type" max_length="40" name="u_type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Full-time" sequence="100" value="Full-time"/>
@@ -10,5 +17,8 @@
                 <element inactive_on_update="false" label="Internship" sequence="600" value="Internship"/>
             </choice>
         </element>
+        <index name="index">
+            <element name="u_manager"/>
+        </index>
     </element>
 </database>

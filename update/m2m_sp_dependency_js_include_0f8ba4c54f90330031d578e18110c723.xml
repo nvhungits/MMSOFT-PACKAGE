@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include">
+    <m2m_sp_dependency_js_include action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <sp_dependency display_value="VUE JS">487b24c54f90330031d578e18110c7b7</sp_dependency>
+        <sp_js_include display_value="https://cdn.jsdelivr.net/npm/vue/dist/vue.js">cd8b64c54f90330031d578e18110c7f7</sp_js_include>
+        <sys_class_name>m2m_sp_dependency_js_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-18 06:47:12</sys_created_on>
+        <sys_id>0f8ba4c54f90330031d578e18110c723</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VUE JS.https://cdn.jsdelivr.net/npm/vue/dist/vue.js</sys_name>
+        <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+        <sys_update_name>m2m_sp_dependency_js_include_0f8ba4c54f90330031d578e18110c723</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-18 06:47:12</sys_updated_on>
+    </m2m_sp_dependency_js_include>
+</record_update>

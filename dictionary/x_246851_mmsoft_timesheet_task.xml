@@ -16,7 +16,7 @@
         <element label="OT" max_length="40" name="u_ot" type="boolean"/>
         <element label="OT Hour" max_length="40" name="u_ot_hour" type="float"/>
         <element display="true" label="Project" max_length="40" name="u_project" reference="x_246851_mmsoft_project" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
-        <element label="Timesheet" max_length="32" name="u_timesheet" reference="x_246851_mmsoft_timesheet" type="reference"/>
+        <element label="Timesheet" max_length="32" name="u_timesheet" reference="x_246851_mmsoft_timesheet" reference_qual="javascript: 'u_active=true^u_state=draft^u_hr_profile=' + gs.getUserID()" type="reference" use_reference_qualifier="advanced"/>
         <element label="Total Hour" max_length="40" name="u_total_hour" type="float"/>
         <index name="index">
             <element name="u_timesheet"/>

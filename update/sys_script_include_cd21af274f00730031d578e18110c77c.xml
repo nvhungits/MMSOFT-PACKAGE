@@ -7,9 +7,16 @@
         <description/>
         <name>MMSUtils</name>
         <script><![CDATA[var MMSUtils = Class.create();
-MMSUtils.prototype = {
+MMSUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	/*
-	GET User DETAILS
+	GET current user
+	*/
+	getCurrentUser: function(){
+		gs.info("Current User: " + gs.getUser().getID());
+		return gs.getUser().getID();
+	},
+	/*
+	GET User Details
 	* @id: user id
 	*/
 	getUserDetails: function(id){
@@ -17,45 +24,101 @@ MMSUtils.prototype = {
 			id = this.getParameter("id");
 		var grUser = new GlideRecord("x_246851_mmsoft_employee");
 		grUser.get(id);
-		return {
+		var details = {
 			user_id: grUser.getValue("user_name"),
 			type: grUser.getValue("u_type"),
-			title: grUser.getValue("title")
+			title: grUser.getValue("title"),
+			managerID: grUser.getValue("u_manager"),
+			managerName: grUser.getDisplayValue("u_manager")
 		};
+		details = JSON.stringify(details);
+		return details; 
 	},
 	/*
-	GET EMPLOYEE DETAILS
-	* @id: timesheet id
+	GET Employee Details
+	* @timesheet: timesheet id
 	*/
 	getEmployeeByTimesheet: function(timesheet){
-		var _log = "";
-		_log += "|------Script Include - MMSUtils - Get Employee Details";
 		if(timesheet == "" || timesheet == null || timesheet == undefined)
 			timesheet = this.getParameter("timesheet");
 		var grTSheet = new GlideRecord("x_246851_mmsoft_timesheet");
 		grTSheet.get(timesheet);
-		_log += "\nTimesheet: " + grTSheet.getValue("number");
-		_log += "\nTimesheet ID: " + timesheet;
 		var hr_profile = grTSheet.getValue("u_hr_profile");
 		var user_details = this.getUserDetails(hr_profile);
-		_log += "\nUser Details: " + user_details;
-		gs.info(_log);
 		return user_details;
 	},
-
+	/*
+	CONVERT Number to Month in format MMM
+	* @num: month in numeric
+	*/
+	convertNumbertoMonth: function(num){
+		if(num == "" || num == null || num == undefined)
+			num = this.getParameter("month");
+		var month = "";
+		switch (num){
+			case 1: month = "Jan"; break;
+			case 2: month = "Feb"; break;
+			case 3: month = "Mar"; break;
+			case 4: month = "Apr"; break;
+			case 5: month = "May"; break;
+			case 6: month = "Jun"; break;
+			case 7: month = "Jul"; break;
+			case 8: month = "Aug"; break;
+			case 9: month = "Sep"; break;
+			case 10: month = "Oct"; break;
+			case 11: month = "Nov"; break;
+			case 12: month = "Dec"; break;
+		}
+		return month;
+	},
+	/*
+	UPDATE : Timesheet
+	@id: timesheet id
+	*/
+	updateTimesheet: function(id, state, reason){
+		if(id == "" || id == null || id == undefined)
+			id = this.getParameter("id");
+		var gr = new GlideRecord("x_246851_mmsoft_timesheet");
+		gr.get(id);
+		gr.u_state = state;
+		gr.u_comments = reason;
+		gr.update();
+	},
+	/*
+	GET Timesheet list base on user
+	@param id: user id
+	*/
+	getTimesheet: function(id){
+		if(id == "" || id == null || id == undefined)
+			id = this.getParameter("id");
+		var grTS = new GlideRecord("x_246851_mmsoft_timesheet");
+		grTS.addQuery("u_hr_profile", id);
+		grTS.addQuery("u_state", "draft");
+		grTS.orderByDesc("number");
+		grTS.query();
+		var timesheets = [];
+		while(grTS.next()){
+			timesheets.push({
+				id: grTS.getValue("sys_id"),
+				number: grTS.getValue("number"),
+				week_commencing: grTS.getValue("u_week_commencing")
+			});
+		}
+		return JSON.stringify(timesheets);
+	},
 	type: 'MMSUtils'
-};]]></script>
+});]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>ttnhi</sys_created_by>
         <sys_created_on>2019-03-14 04:13:49</sys_created_on>
         <sys_id>cd21af274f00730031d578e18110c77c</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_name>MMSUtils</sys_name>
         <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
         <sys_policy/>
         <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
         <sys_update_name>sys_script_include_cd21af274f00730031d578e18110c77c</sys_update_name>
         <sys_updated_by>ttnhi</sys_updated_by>
-        <sys_updated_on>2019-03-14 09:21:17</sys_updated_on>
+        <sys_updated_on>2019-03-28 07:20:01</sys_updated_on>
     </sys_script_include>
 </record_update>

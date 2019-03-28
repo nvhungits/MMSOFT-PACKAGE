@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_ng_template">
+    <sp_ng_template action="INSERT_OR_UPDATE">
+        <id>mms-empty-state-page-editor.html</id>
+        <sp_widget display_value="MMSoft - Form">8914b0864f9cb30031d578e18110c7c2</sp_widget>
+        <sys_class_name>sp_ng_template</sys_class_name>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-03-25 02:30:11</sys_created_on>
+        <sys_id>0fc3b7874fd8770031d578e18110c754</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>mms-empty-state-page-editor.html</sys_name>
+        <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+        <sys_update_name>sp_ng_template_0fc3b7874fd8770031d578e18110c754</sys_update_name>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-03-25 02:30:11</sys_updated_on>
+        <template><![CDATA[<div class="empty-state">
+  <div class="empty-state-content">
+    <div class="empty-state-badge fa fa-file text-success-alt"></div>
+    <h3 class="empty-state-header">${Page Editor}</h3>
+    <p>${Select a page above to view a map of the hierarchical structure of any page.}</p>
+    <p>${From the map, you can select an element to expose it in a form below the page map.}</p>
+  </div>
+</div>
+]]></template>
+    </sp_ng_template>
+</record_update>

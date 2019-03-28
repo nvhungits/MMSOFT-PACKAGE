@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <sc_cat_item display_value="Report Weekly Activities">e7ff0a514f90730031d578e18110c7f2</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-03-19 08:52:19</sys_created_on>
+        <sys_id>bdc1d6514f90730031d578e18110c797</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Reporter.Report Weekly Activities</sys_name>
+        <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+        <sys_update_name>io_set_item_bdc1d6514f90730031d578e18110c797</sys_update_name>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-03-19 08:52:19</sys_updated_on>
+        <variable_set display_value="Reporter's Details">2aa1da914f90730031d578e18110c7cd</variable_set>
+    </io_set_item>
+</record_update>

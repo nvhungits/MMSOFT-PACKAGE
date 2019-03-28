@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_push_notif_app_install">
+    <sys_push_notif_app_install action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <last_registered_on>2019-03-26 09:35:51</last_registered_on>
+        <sys_class_name>sys_push_notif_app_install</sys_class_name>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-03-26 06:28:01</sys_created_on>
+        <sys_id>98e3f5eb4f90330031d578e18110c7cc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>fhqAN8QdmSQ:APA91bFQ3MKS_7oGi5uZW14HRHRZWh5yyGg8KYHQD1DMDZO3NuqLB5CHw-tw_MdCZZCxbBnbirPyffK3PDkfuzR5OwF8EIg8RTH_QUU0aLH11FV70oeGD3fBE9b0jvYkzOqvU2W7A3q8</sys_name>
+        <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+        <sys_policy/>
+        <sys_push_application_id display_value="ServiceNow Mobile Application">05ed2fb177002300258da2e2c81061c2</sys_push_application_id>
+        <sys_push_platform_id display_value="Google">53e75f30ff0002009738ffffffffff12</sys_push_platform_id>
+        <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+        <sys_update_name>sys_push_notif_app_install_98e3f5eb4f90330031d578e18110c7cc</sys_update_name>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-03-26 09:35:51</sys_updated_on>
+        <sys_user_id display_value="Nhi Tang">b03eddb54f00330031d578e18110c7e2</sys_user_id>
+        <token>fhqAN8QdmSQ:APA91bFQ3MKS_7oGi5uZW14HRHRZWh5yyGg8KYHQD1DMDZO3NuqLB5CHw-tw_MdCZZCxbBnbirPyffK3PDkfuzR5OwF8EIg8RTH_QUU0aLH11FV70oeGD3fBE9b0jvYkzOqvU2W7A3q8</token>
+    </sys_push_notif_app_install>
+</record_update>

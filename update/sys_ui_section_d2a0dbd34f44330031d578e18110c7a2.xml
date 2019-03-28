@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-15 09:34:51</sys_created_on>
-            <sys_id>b525750c4f10b30031d578e18110c736</sys_id>
+            <sys_created_on>2019-03-27 10:06:44</sys_created_on>
+            <sys_id>358f277f4fd0730031d578e18110c7c2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_timesheet" sys_domain="global" view="Default view">d2a0dbd34f44330031d578e18110c7a2</sys_ui_section>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-15 09:34:51</sys_updated_on>
+            <sys_updated_on>2019-03-27 10:06:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>u_state</element>
             <position>1</position>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-15 09:34:51</sys_created_on>
-            <sys_id>3125750c4f10b30031d578e18110c737</sys_id>
+            <sys_created_on>2019-03-27 10:06:44</sys_created_on>
+            <sys_id>bd8f277f4fd0730031d578e18110c7c2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_timesheet" sys_domain="global" view="Default view">d2a0dbd34f44330031d578e18110c7a2</sys_ui_section>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-15 09:34:51</sys_updated_on>
+            <sys_updated_on>2019-03-27 10:06:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>u_hr_profile</element>
             <position>2</position>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-15 09:34:51</sys_created_on>
-            <sys_id>b525750c4f10b30031d578e18110c737</sys_id>
+            <sys_created_on>2019-03-27 10:06:44</sys_created_on>
+            <sys_id>358f277f4fd0730031d578e18110c7c3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_timesheet" sys_domain="global" view="Default view">d2a0dbd34f44330031d578e18110c7a2</sys_ui_section>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-15 09:34:51</sys_updated_on>
+            <sys_updated_on>2019-03-27 10:06:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>u_period</element>
             <position>3</position>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-15 09:34:51</sys_created_on>
-            <sys_id>3d25750c4f10b30031d578e18110c737</sys_id>
+            <sys_created_on>2019-03-27 10:06:44</sys_created_on>
+            <sys_id>b98f277f4fd0730031d578e18110c7c3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_timesheet" sys_domain="global" view="Default view">d2a0dbd34f44330031d578e18110c7a2</sys_ui_section>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-15 09:34:51</sys_updated_on>
+            <sys_updated_on>2019-03-27 10:06:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>u_week_commencing</element>
             <position>4</position>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-15 09:34:51</sys_created_on>
-            <sys_id>b125750c4f10b30031d578e18110c738</sys_id>
+            <sys_created_on>2019-03-27 10:06:44</sys_created_on>
+            <sys_id>318f277f4fd0730031d578e18110c7c4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_timesheet" sys_domain="global" view="Default view">d2a0dbd34f44330031d578e18110c7a2</sys_ui_section>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-15 09:34:51</sys_updated_on>
+            <sys_updated_on>2019-03-27 10:06:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,181 +74,167 @@
             <element>u_timesheet_approver</element>
             <position>5</position>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-15 09:34:51</sys_created_on>
-            <sys_id>3925750c4f10b30031d578e18110c738</sys_id>
+            <sys_created_on>2019-03-27 10:06:44</sys_created_on>
+            <sys_id>b58f277f4fd0730031d578e18110c7c4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_timesheet" sys_domain="global" view="Default view">d2a0dbd34f44330031d578e18110c7a2</sys_ui_section>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-15 09:34:51</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_hr_manager</element>
-            <position>6</position>
-            <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-15 09:34:51</sys_created_on>
-            <sys_id>bd25750c4f10b30031d578e18110c738</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_timesheet" sys_domain="global" view="Default view">d2a0dbd34f44330031d578e18110c7a2</sys_ui_section>
-            <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-15 09:34:51</sys_updated_on>
+            <sys_updated_on>2019-03-27 10:06:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>7</position>
+            <position>6</position>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-15 09:34:51</sys_created_on>
-            <sys_id>3525750c4f10b30031d578e18110c739</sys_id>
+            <sys_created_on>2019-03-27 10:06:44</sys_created_on>
+            <sys_id>3d8f277f4fd0730031d578e18110c7c4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_timesheet" sys_domain="global" view="Default view">d2a0dbd34f44330031d578e18110c7a2</sys_ui_section>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-15 09:34:51</sys_updated_on>
+            <sys_updated_on>2019-03-27 10:06:44</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_mon</element>
-            <position>8</position>
+            <position>7</position>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-15 09:34:51</sys_created_on>
-            <sys_id>b925750c4f10b30031d578e18110c739</sys_id>
+            <sys_created_on>2019-03-27 10:06:44</sys_created_on>
+            <sys_id>b18f277f4fd0730031d578e18110c7c5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_timesheet" sys_domain="global" view="Default view">d2a0dbd34f44330031d578e18110c7a2</sys_ui_section>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-15 09:34:51</sys_updated_on>
+            <sys_updated_on>2019-03-27 10:06:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_tue</element>
-            <position>9</position>
+            <position>8</position>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-15 09:34:51</sys_created_on>
-            <sys_id>3125750c4f10b30031d578e18110c73a</sys_id>
+            <sys_created_on>2019-03-27 10:06:44</sys_created_on>
+            <sys_id>398f277f4fd0730031d578e18110c7c5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_timesheet" sys_domain="global" view="Default view">d2a0dbd34f44330031d578e18110c7a2</sys_ui_section>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-15 09:34:51</sys_updated_on>
+            <sys_updated_on>2019-03-27 10:06:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_wed</element>
-            <position>10</position>
+            <position>9</position>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-15 09:34:51</sys_created_on>
-            <sys_id>b525750c4f10b30031d578e18110c73a</sys_id>
+            <sys_created_on>2019-03-27 10:06:44</sys_created_on>
+            <sys_id>bd8f277f4fd0730031d578e18110c7c5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_timesheet" sys_domain="global" view="Default view">d2a0dbd34f44330031d578e18110c7a2</sys_ui_section>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-15 09:34:51</sys_updated_on>
+            <sys_updated_on>2019-03-27 10:06:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_thu</element>
-            <position>11</position>
+            <position>10</position>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-15 09:34:51</sys_created_on>
-            <sys_id>3d25750c4f10b30031d578e18110c73a</sys_id>
+            <sys_created_on>2019-03-27 10:06:44</sys_created_on>
+            <sys_id>358f277f4fd0730031d578e18110c7c6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_timesheet" sys_domain="global" view="Default view">d2a0dbd34f44330031d578e18110c7a2</sys_ui_section>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-15 09:34:51</sys_updated_on>
+            <sys_updated_on>2019-03-27 10:06:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_fri</element>
-            <position>12</position>
+            <position>11</position>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-15 09:34:51</sys_created_on>
-            <sys_id>b125750c4f10b30031d578e18110c73b</sys_id>
+            <sys_created_on>2019-03-27 10:06:44</sys_created_on>
+            <sys_id>b98f277f4fd0730031d578e18110c7c6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_timesheet" sys_domain="global" view="Default view">d2a0dbd34f44330031d578e18110c7a2</sys_ui_section>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-15 09:34:51</sys_updated_on>
+            <sys_updated_on>2019-03-27 10:06:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_sat</element>
-            <position>13</position>
+            <position>12</position>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-15 09:34:51</sys_created_on>
-            <sys_id>3925750c4f10b30031d578e18110c73b</sys_id>
+            <sys_created_on>2019-03-27 10:06:44</sys_created_on>
+            <sys_id>318f277f4fd0730031d578e18110c7c7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_timesheet" sys_domain="global" view="Default view">d2a0dbd34f44330031d578e18110c7a2</sys_ui_section>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-15 09:34:51</sys_updated_on>
+            <sys_updated_on>2019-03-27 10:06:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_sun</element>
-            <position>14</position>
+            <position>13</position>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-15 09:34:51</sys_created_on>
-            <sys_id>bd25750c4f10b30031d578e18110c73b</sys_id>
+            <sys_created_on>2019-03-27 10:06:44</sys_created_on>
+            <sys_id>b58f277f4fd0730031d578e18110c7c7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_timesheet" sys_domain="global" view="Default view">d2a0dbd34f44330031d578e18110c7a2</sys_ui_section>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-15 09:34:51</sys_updated_on>
+            <sys_updated_on>2019-03-27 10:06:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_total_hours</element>
-            <position>15</position>
+            <position>14</position>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-15 09:34:51</sys_created_on>
-            <sys_id>3525750c4f10b30031d578e18110c73c</sys_id>
+            <sys_created_on>2019-03-27 10:06:44</sys_created_on>
+            <sys_id>3d8f277f4fd0730031d578e18110c7c7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_timesheet" sys_domain="global" view="Default view">d2a0dbd34f44330031d578e18110c7a2</sys_ui_section>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-15 09:34:51</sys_updated_on>
+            <sys_updated_on>2019-03-27 10:06:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>16</position>
+            <position>15</position>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-15 09:34:51</sys_created_on>
-            <sys_id>b925750c4f10b30031d578e18110c73c</sys_id>
+            <sys_created_on>2019-03-27 10:06:44</sys_created_on>
+            <sys_id>b18f277f4fd0730031d578e18110c7c8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_timesheet" sys_domain="global" view="Default view">d2a0dbd34f44330031d578e18110c7a2</sys_ui_section>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-15 09:34:51</sys_updated_on>
+            <sys_updated_on>2019-03-27 10:06:44</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_comments</element>
-            <position>17</position>
+            <position>16</position>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-15 09:34:51</sys_created_on>
-            <sys_id>3125750c4f10b30031d578e18110c73d</sys_id>
+            <sys_created_on>2019-03-27 10:06:44</sys_created_on>
+            <sys_id>398f277f4fd0730031d578e18110c7c8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_timesheet" sys_domain="global" view="Default view">d2a0dbd34f44330031d578e18110c7a2</sys_ui_section>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-15 09:34:51</sys_updated_on>
+            <sys_updated_on>2019-03-27 10:06:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

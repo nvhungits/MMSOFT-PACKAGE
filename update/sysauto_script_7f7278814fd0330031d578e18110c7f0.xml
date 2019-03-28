@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>MMSOFT - Weekly timesheet</name>
+        <run_as display_value="Nhi Tang">b03eddb54f00330031d578e18110c7e2</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>7</run_dayofweek>
+        <run_period/>
+        <run_start>2019-03-18 07:17:33</run_start>
+        <run_time>1970-01-02 07:59:00</run_time>
+        <run_type>weekly</run_type>
+        <script><![CDATA[var _log = "";
+_log += "|-----Scheduled Jobs - MMSOFT Weekly Timesheet-----|";
+var this_sunday = "2019-03-24 23:59:00";
+var monday = new GlideDateTime(this_sunday);
+monday.addDaysLocalTime(1);
+var sunday = new GlideDateTime(monday);
+sunday.addDaysLocalTime(6);
+_log += "\n- Current: " + new GlideDateTime();
+_log += "\n- Monday: " + monday;
+_log += "\n- Sunday: " + sunday;
+var grEmployee = new GlideRecord("x_246851_mmsoft_employee");
+grEmployee.addActiveQuery();
+grEmployee.query();
+while(grEmployee.next()){
+	var grTimesheet = new GlideRecord("x_246851_mmsoft_timesheet");
+	grTimesheet.initialize();
+	grTimesheet.u_state = "draft";
+	grTimesheet.u_date_start = monday;
+	grTimesheet.u_date_end = sunday;
+	grTimesheet.u_period = convertNumbertoMonth(monday.getMonthLocalTime()) + " " + monday.getYearLocalTime();
+	grTimesheet.u_week_commencing = getDayMonthFormat(monday) + " -- " + getDayMonthFormat(sunday);
+	grTimesheet.u_hr_profile = grEmployee.getValue("sys_id");
+	_log += "- Employee's Manager: " + grEmployee.getValue("u_manager");
+	if(grEmployee.getValue("u_manager") == "" || grEmployee.getValue("u_manager") == null)
+		grTimesheet.u_timesheet_approver = grEmployee.getValue("sys_id");
+	else
+		grTimesheet.u_timesheet_approver = grEmployee.getValue("u_manager");
+	grTimesheet.insert();
+}
+
+//Get Day Month in format dd MMM
+function getDayMonthFormat(date){
+	return date.getDayOfMonthLocalTime() + " " + convertNumbertoMonth(date.getMonthLocalTime());
+}
+//Convert Number to Month in format MMM
+function convertNumbertoMonth(num){
+	var month = "";
+	switch (num){
+		case 1: month = "Jan"; break;
+		case 2: month = "Feb"; break;
+		case 3: month = "Mar"; break;
+		case 4: month = "Apr"; break;
+		case 5: month = "May"; break;
+		case 6: month = "Jun"; break;
+		case 7: month = "Jul"; break;
+		case 8: month = "Aug"; break;
+		case 9: month = "Sep"; break;
+		case 10: month = "Oct"; break;
+		case 11: month = "Nov"; break;
+		case 12: month = "Dec"; break;
+	}
+	return month;
+}
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-03-18 07:18:07</sys_created_on>
+        <sys_id>7f7278814fd0330031d578e18110c7f0</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>MMSOFT - Weekly timesheet</sys_name>
+        <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+        <sys_update_name>sysauto_script_7f7278814fd0330031d578e18110c7f0</sys_update_name>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-03-18 10:18:24</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

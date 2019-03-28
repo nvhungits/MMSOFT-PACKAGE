@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item/>
+        <catalog_variable>IO:0b829a914f90730031d578e18110c7a2</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-03-19 08:58:23</sys_created_on>
+        <sys_id>d1235ed14f90730031d578e18110c743</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>timesheet_approver</sys_name>
+        <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_d1235ed14f90730031d578e18110c743</sys_update_name>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-03-19 08:58:23</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Reporter's Details Preset">fdd25ad14f90730031d578e18110c720</ui_policy>
+        <variable>timesheet_approver</variable>
+        <variable_set display_value="Reporter's Details">2aa1da914f90730031d578e18110c7cd</variable_set>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+</record_update>

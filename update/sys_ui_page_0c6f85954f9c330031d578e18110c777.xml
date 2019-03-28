@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[//Perform button Cancel
+function btnCancel(){
+	//Destroy the current dialog window.
+	GlideDialogWindow.get().destroy();
+}
+
+//Perform button Reject
+function doReject(){
+	var msg = document.getElementById("msg");
+	msg.innerHTML = "";
+	var timesheet = document.getElementById("timesheet_id");
+	var reason = document.getElementById("reason") ;
+	
+	if(reason == ""){
+		msg = "Please give the reason why the timsheet is rejected";
+	}
+	else{
+		var ga = new GlideAjax("MMSUtils");
+		ga.addParam("sysparm_name", "updateTimesheet");
+		ga.addParam("timesheetId", timesheet);
+		ga.addParam("state", "rejected");
+		ga.addParam("reason", reason);
+		ga.getXML(function(response){
+			var answer = response.responseXML.documentElement.getAttribute("answer");
+			//Destroy the current dialog window.
+			GlideDialogWindow.get().destroy();
+			reloadWindow(window); //Refresh the form 
+		});
+	}
+}
+
+]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_246851_mmsoft_Timesheet - Reject Timesheet.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+	<g:evaluate var="jvar_timesheetId"
+				expression="RP.getWindowProperties().get('timesheetId')" />
+	<style>
+
+		#reason{
+			min-height: 100px;
+			resize: vertical;
+		}
+		#errMsg{
+			float: left;
+		}
+		.btn{
+			margin-left: 5px;
+		}
+	</style>
+
+	<div class="panel-body">
+		<input type="hidden" id="timesheet_id" value="${jvar_timesheetId}" />
+
+		<!--Reason-->
+		<label >Comments</label>
+		<textarea class="comments form-control" id='comments'></textarea>
+	</div>
+	<div class="panel-footer" style="text-align: right;">
+		<button class="btn btn-primary" onclick="btnReject()">Reject</button>
+		<button class="btn btn-default" onclick="btnCancel()">Cancel</button>
+		<label id="errMsg"></label>
+	</div>
+</j:jelly>]]></html>
+        <name>Timesheet - Reject Timesheet</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-03-19 06:23:13</sys_created_on>
+        <sys_id>0c6f85954f9c330031d578e18110c777</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Timesheet - Reject Timesheet</sys_name>
+        <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+        <sys_update_name>sys_ui_page_0c6f85954f9c330031d578e18110c777</sys_update_name>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-03-19 06:56:13</sys_updated_on>
+    </sys_ui_page>
+</record_update>

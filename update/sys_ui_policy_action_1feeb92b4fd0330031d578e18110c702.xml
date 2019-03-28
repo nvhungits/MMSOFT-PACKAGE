@@ -2,22 +2,22 @@
     <sys_ui_policy_action action="INSERT_OR_UPDATE">
         <cleared>false</cleared>
         <disabled>ignore</disabled>
-        <field>u_ot_hour</field>
+        <field>u_timesheet</field>
         <mandatory>true</mandatory>
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>ttnhi</sys_created_by>
-        <sys_created_on>2019-03-13 09:35:32</sys_created_on>
-        <sys_id>2812eb574f84330031d578e18110c71f</sys_id>
+        <sys_created_on>2019-03-26 07:16:28</sys_created_on>
+        <sys_id>1feeb92b4fd0330031d578e18110c702</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>u_ot_hour</sys_name>
+        <sys_name>u_timesheet</sys_name>
         <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
         <sys_policy/>
         <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
-        <sys_update_name>sys_ui_policy_action_2812eb574f84330031d578e18110c71f</sys_update_name>
+        <sys_update_name>sys_ui_policy_action_1feeb92b4fd0330031d578e18110c702</sys_update_name>
         <sys_updated_by>ttnhi</sys_updated_by>
-        <sys_updated_on>2019-03-13 09:35:32</sys_updated_on>
+        <sys_updated_on>2019-03-26 07:16:28</sys_updated_on>
         <table>x_246851_mmsoft_timesheet_task</table>
-        <ui_policy display_value="Show OT Hour field when OT is checked">0ee167574f84330031d578e18110c7f0</ui_policy>
-        <visible>true</visible>
+        <ui_policy display_value="Set Mandatory fields">5426d35b4f44330031d578e18110c767</ui_policy>
+        <visible>ignore</visible>
     </sys_ui_policy_action>
 </record_update>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"activities":{},"subflows":[],"stages":{},"ends":["edb62b654f10b30031d578e18110c71d"]}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type/>
+        <description/>
+        <expected_sequences>e1b62b654f10b30031d578e18110c71c,2e35cc424f1cb30031d578e18110c797,edb62b654f10b30031d578e18110c71d</expected_sequences>
+        <expected_time/>
+        <expected_time_type/>
+        <full_sequences>e1b62b654f10b30031d578e18110c71c,2e35cc424f1cb30031d578e18110c797,edb62b654f10b30031d578e18110c71d</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>MMSOFT - Report Weekly Activities</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration display_value="2 business days by 4pm">3bf802c20a0a0b52008e2859cd8abcf2</relative_duration>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field>stage</stage_field>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">e1b62b654f10b30031d578e18110c71c</start>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-03-20 09:41:53</sys_created_on>
+        <sys_id>4f962f654f10b30031d578e18110c7f5</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-03-21 06:36:32</sys_updated_on>
+        <table>sc_req_item</table>
+        <timezone/>
+        <validated>false</validated>
+        <workflow display_value="MMSOFT - Report Weekly Activities">65b62b654f10b30031d578e18110c71b</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>MMSOFT - Report Weekly Activities</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-03-20 09:41:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>65b62b654f10b30031d578e18110c71b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MMSOFT - Report Weekly Activities</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+        <sys_update_name>wf_workflow_65b62b654f10b30031d578e18110c71b</sys_update_name>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-03-20 09:41:53</sys_updated_on>
+        <table>sc_req_item</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Timesheet Approved</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>90</order>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-03-20 09:41:53</sys_created_on>
+        <sys_id>21b6af654f10b30031d578e18110c74c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-03-20 09:49:30</sys_updated_on>
+        <value>timesheet_approved</value>
+        <workflow_version display_value="MMSOFT - Report Weekly Activities">4f962f654f10b30031d578e18110c7f5</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Timesheet Rejected</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1000</order>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-03-20 09:41:53</sys_created_on>
+        <sys_id>a5b6af654f10b30031d578e18110c74b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-03-20 09:49:30</sys_updated_on>
+        <value>timesheet_rejected</value>
+        <workflow_version display_value="MMSOFT - Report Weekly Activities">4f962f654f10b30031d578e18110c7f5</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Waiting for Approval</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-03-20 09:41:53</sys_created_on>
+        <sys_id>a1b6af654f10b30031d578e18110c74c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-03-21 03:10:12</sys_updated_on>
+        <value>waiting_for_approval</value>
+        <workflow_version display_value="MMSOFT - Report Weekly Activities">4f962f654f10b30031d578e18110c7f5</workflow_version>
+    </wf_stage>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-03-20 09:41:53</sys_created_on>
+        <sys_id>e1b62b654f10b30031d578e18110c71c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-03-20 09:41:53</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="MMSOFT - Report Weekly Activities">4f962f654f10b30031d578e18110c7f5</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=e1b62b654f10b30031d578e18110c71c"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">e1b62b654f10b30031d578e18110c71c</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-03-20 09:41:53</sys_created_on>
+        <sys_id>e1b62b654f10b30031d578e18110c71d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-03-20 09:41:53</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Create Timesheet Task</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-03-21 06:36:08</sys_created_on>
+        <sys_id>2e35cc424f1cb30031d578e18110c797</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-03-21 06:36:22</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="MMSOFT - Report Weekly Activities">4f962f654f10b30031d578e18110c7f5</workflow_version>
+        <x>146</x>
+        <y>123</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=2e35cc424f1cb30031d578e18110c797"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2e35cc424f1cb30031d578e18110c797</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-03-21 06:36:08</sys_created_on>
+        <sys_id>5ec544824f1cb30031d578e18110c72c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-03-21 06:36:08</sys_updated_on>
+        <value>var _log = "";&#13;
+_log += "Workflow - Create Timesheet Task";&#13;
+_log += "\nReporter: " + current.variables.reporter;&#13;
+_log += "\nTimesheet Approver: " + current.variables.timesheet_approver;&#13;
+&#13;
+gs.info(_log);</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2e35cc424f1cb30031d578e18110c797</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-03-21 06:36:08</sys_created_on>
+        <sys_id>5ec544824f1cb30031d578e18110c72c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-03-21 06:36:08</sys_updated_on>
+        <value>var _log = "";&#13;
+_log += "Workflow - Create Timesheet Task";&#13;
+_log += "\nReporter: " + current.variables.reporter;&#13;
+_log += "\nTimesheet Approver: " + current.variables.timesheet_approver;&#13;
+&#13;
+gs.info(_log);</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Create Timesheet Task">2e35cc424f1cb30031d578e18110c797</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-03-21 06:36:08</sys_created_on>
+        <sys_id>dec544824f1cb30031d578e18110c72d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-03-21 06:36:08</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-03-20 09:41:53</sys_created_on>
+        <sys_id>edb62b654f10b30031d578e18110c71d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-03-21 06:36:28</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="MMSOFT - Report Weekly Activities">4f962f654f10b30031d578e18110c7f5</workflow_version>
+        <x>378</x>
+        <y>231</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=edb62b654f10b30031d578e18110c71d"/>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">e1b62b654f10b30031d578e18110c71d</condition>
+        <from display_value="Begin">e1b62b654f10b30031d578e18110c71c</from>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-03-21 06:36:16</sys_created_on>
+        <sys_id>04d5cc424f1cb30031d578e18110c7a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-03-21 06:36:16</sys_updated_on>
+        <to display_value="Create Timesheet Task">2e35cc424f1cb30031d578e18110c797</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">dec544824f1cb30031d578e18110c72d</condition>
+        <from display_value="Create Timesheet Task">2e35cc424f1cb30031d578e18110c797</from>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-03-21 06:36:17</sys_created_on>
+        <sys_id>58d544824f1cb30031d578e18110c739</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-03-21 06:36:17</sys_updated_on>
+        <to display_value="End">edb62b654f10b30031d578e18110c71d</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-03-20 09:41:53</sys_created_on>
+        <sys_id>e5b62b654f10b30031d578e18110c71a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-03-20 09:41:53</sys_updated_on>
+        <workflow_version display_value="MMSOFT - Report Weekly Activities">4f962f654f10b30031d578e18110c7f5</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=65b62b654f10b30031d578e18110c71b^sys_id!=4f962f654f10b30031d578e18110c7f5">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>
