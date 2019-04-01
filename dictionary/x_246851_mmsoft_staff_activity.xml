@@ -5,5 +5,8 @@
         <element attributes="edge_encryption_enabled=true" label="Staff" max_length="40" name="staff" reference="x_246851_mmsoft_employee" type="reference"/>
         <element label="Today" max_length="8000" name="today" type="html"/>
         <element label="Yesterday" max_length="8000" name="yesterday" type="html"/>
+        <index name="index">
+            <element name="staff"/>
+        </index>
     </element>
 </database>

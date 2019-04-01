@@ -3,7 +3,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>u_company_name</element>
-            <list_id display_value="x_246851_mmsoft_company" element="NULL" name="x_246851_mmsoft_company" parent="NULL" relationship="NULL" sys_domain="global" view="d84b1371dd0323007850f2ee37a03972">4b65eb5b4f84330031d578e18110c72d</list_id>
+            <list_id display_value="x_246851_mmsoft_company" element="NULL" name="x_246851_mmsoft_company" parent="NULL" relationship="NULL" sys_domain="global" view="d84b1371dd0323007850f2ee37a03972">8dc51ad34f80330031d578e18110c793</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -18,7 +18,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>value</element>
-            <list_id display_value="x_246851_mmsoft_company" element="NULL" name="x_246851_mmsoft_company" parent="NULL" relationship="NULL" sys_domain="global" view="d84b1371dd0323007850f2ee37a03972">4b65eb5b4f84330031d578e18110c72d</list_id>
+            <list_id display_value="x_246851_mmsoft_company" element="NULL" name="x_246851_mmsoft_company" parent="NULL" relationship="NULL" sys_domain="global" view="d84b1371dd0323007850f2ee37a03972">8dc51ad34f80330031d578e18110c793</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>

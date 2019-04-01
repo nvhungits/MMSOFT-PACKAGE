@@ -12,13 +12,13 @@
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>ttnhi</sys_created_by>
         <sys_created_on>2019-03-11 08:51:09</sys_created_on>
-        <sys_id>6ac4497e4f04330031d578e18110c7bd</sys_id>
+        <sys_id>cf9bf8e54fa4330031d578e18110c7d0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_246851_mmsoft_participate_project</sys_name>
         <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
         <sys_policy/>
         <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
-        <sys_update_name>ua_table_licensing_config_6ac4497e4f04330031d578e18110c7bd</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_cf9bf8e54fa4330031d578e18110c7d0</sys_update_name>
         <sys_updated_by>ttnhi</sys_updated_by>
         <sys_updated_on>2019-03-11 08:51:09</sys_updated_on>
     </ua_table_licensing_config>

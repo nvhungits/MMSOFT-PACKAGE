@@ -21,5 +21,8 @@
         <index name="index">
             <element name="u_timesheet"/>
         </index>
+        <index name="index2">
+            <element name="u_project"/>
+        </index>
     </element>
 </database>
