@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
     <sp_rel_widget_clone action="INSERT_OR_UPDATE">
-        <child display_value="MMSoft - Form">8914b0864f9cb30031d578e18110c7c2</child>
+        <child display_value="MMSoft Form">8914b0864f9cb30031d578e18110c7c2</child>
         <cloned>2019-03-21 09:58:23</cloned>
         <last_validated>2019-03-21 09:58:23</last_validated>
         <parent display_value="Form">fd1f4ec347730200ba13a5554ee490c0</parent>

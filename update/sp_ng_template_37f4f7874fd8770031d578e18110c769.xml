@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_ng_template">
     <sp_ng_template action="INSERT_OR_UPDATE">
         <id>mms-empty-state-portal-edit.html</id>
-        <sp_widget display_value="MMSoft - Form">8914b0864f9cb30031d578e18110c7c2</sp_widget>
+        <sp_widget display_value="MMSoft Form">8914b0864f9cb30031d578e18110c7c2</sp_widget>
         <sys_class_name>sp_ng_template</sys_class_name>
         <sys_created_by>ttnhi</sys_created_by>
         <sys_created_on>2019-03-25 02:37:20</sys_created_on>

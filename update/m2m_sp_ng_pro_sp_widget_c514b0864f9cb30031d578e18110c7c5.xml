@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget">
     <m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE">
         <sp_angular_provider display_value="spAttachmentManager">06e836f0d722120023c84f80de6103a1</sp_angular_provider>
-        <sp_widget display_value="MMSoft - Form">8914b0864f9cb30031d578e18110c7c2</sp_widget>
+        <sp_widget display_value="MMSoft Form">8914b0864f9cb30031d578e18110c7c2</sp_widget>
         <sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name>
         <sys_created_by>ttnhi</sys_created_by>
         <sys_created_on>2019-03-21 09:58:23</sys_created_on>

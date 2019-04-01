@@ -395,10 +395,10 @@
         <docs/>
         <field_list/>
         <has_preview>false</has_preview>
-        <id>mmsoft-form</id>
+        <id>mms-form</id>
         <internal>false</internal>
         <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
-        <name>MMSoft - Form</name>
+        <name>MMSoft Form</name>
         <option_schema>[{"name":"disableUIActions","section":"Behavior","label":"Disable UI Actions on Form","type":"boolean"},{"name":"showFormView","section":"Behavior","label":"Display current form view","type":"boolean"},{"name":"omitHeaderOptions","section":"Behavior","label":"Omit header options icon","type":"boolean"}]</option_schema>
         <public>false</public>
         <roles/>
@@ -419,6 +419,7 @@
 	data.attachmentSuccessMsg = gs.getMessage("Attachment successfully uploaded");
 	
 	//data.isAdmin = gs.hasRightsTo('sp/configure.all/execute', null);
+	data.isAdmin = true;
 	data.emptyStateTemplate = options.empty_state_template;
 	data.disableUIActions = options.disableUIActions === "true";
 	data.hideRelatedLists = options.hideRelatedLists || false;
@@ -427,8 +428,6 @@
 		data.table = input.table;
 		data.sys_id = input.sys_id;
 		data.view = input.view;
-		console.log("Input -> table: " + data.table);
-		console.log("Input -> sys_id: " + data.sys_id);
 		var result = {};
 		if (input._fields) {
 			result = $sp.saveRecord(input.table, input.sys_id, input._fields);
@@ -463,16 +462,19 @@
 	if (!data.sys_id)
 		return;
 
-	var rec = $sp.getRecord(data.table, data.sys_id);
+// 	var rec = $sp.getRecord(data.table, data.sys_id);
+	var rec = new GlideRecord(data.table);
+	rec.get(data.sys_id);
 	data.isValid = rec.isValid() || data.sys_id == "-1";
 	if (!data.isValid)
 		return;
 
 	data.table = rec.getRecordClassName();
-	data.tableHierarchy = GlideDBObjectManager.getTables(data.table).toArray().join();
+// 	data.tableHierarchy = GlideDBObjectManager.getTables(data.table).toArray().join();
 	data.canWrite = rec.canWrite();
 	var hasRecordAccess = data.sys_id == "-1" ? rec.canCreate() : data.canWrite;
-	data.canAttach = hasRecordAccess && gs.hasRole(gs.getProperty('glide.attachment.role')) && !GlideTableDescriptor.get(data.table).getED().getBooleanAttribute("no_attachment");
+	data.canAttach = hasRecordAccess && gs.hasRole(gs.getProperty('glide.attachment.role'));
+		//&& !GlideTableDescriptor.get(data.table).getED().getBooleanAttribute("no_attachment");
 	data.f = $sp.getForm(data.table, data.sys_id, data.query, data.view);
 
 	// Activity formatter is hardcoded to set specific options
@@ -504,14 +506,14 @@
         <sys_created_by>ttnhi</sys_created_by>
         <sys_created_on>2019-03-21 09:58:23</sys_created_on>
         <sys_id>8914b0864f9cb30031d578e18110c7c2</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>MMSoft - Form</sys_name>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>MMSoft Form</sys_name>
         <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
         <sys_policy/>
         <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
         <sys_update_name>sp_widget_8914b0864f9cb30031d578e18110c7c2</sys_update_name>
         <sys_updated_by>ttnhi</sys_updated_by>
-        <sys_updated_on>2019-03-26 04:18:42</sys_updated_on>
+        <sys_updated_on>2019-04-01 08:28:00</sys_updated_on>
         <template><![CDATA[<div ng-if="::!data.isValid && !data.emptyStateTemplate" class="panel panel-default">
   <div class="panel-body wrapper-lg text-center">
     <span ng-if="!data.tableUnsupported">${Record not found}</span>
@@ -546,8 +548,8 @@
               <li ng-if="::data.isAdmin" class="dropdown-header">${Configure}</li>
               <li ng-if="::data.isAdmin"><a href="/slushbucket.do?sysparm_referring_url={{adminMenu.encodedPageUrl}}&sysparm_list={{data.f._sections[0].id}}&sysparm_form=section&sysparm_view={{data.f.view}}" target="_blank">${Form Layout}</a></li>
               <li ng-if="::data.isAdmin"><a href="/slushbucket.do?sysparm_referring_url={{adminMenu.encodedPageUrl}}&sysparm_list={{data.f.table}}&sysparm_form=related_list&sysparm_view={{data.f.view}}" target="_blank">${Related Lists}</a></li>
-              <li ng-if="::data.isAdmin"><a href="?id=lf&table=sys_ui_policy&filter=table%3D{{data.f.table}}%5EORtableIN{{data.tableHierarchy}}%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10" ng-click="openRelatedList($event, {id:'lf', table: 'sys_ui_policy', filter: 'table%3D{{data.f.table}}%5EORtableIN{{data.f.table}},sys_metadata%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10'})">${UI Policies} <span class="badge pull-right" ng-if="f.policy.length">{{f.policy.length}}</span></a></li>
-              <li ng-if="::data.isAdmin"><a href="?id=lf&table=sys_script_client&filter=table%3D{{data.f.table}}%5EORtableIN{{data.tableHierarchy}}%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10" ng-click="openRelatedList($event, {id: 'lf', table: 'sys_script_client', filter: 'table%3D{{data.f.table}}%5EORtableIN{{data.f.table}},sys_metadata%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10'})">${Client Scripts} <span class="badge pull-right" ng-if="adminMenu.getClientScriptCount()">{{adminMenu.getClientScriptCount()}}</span></a></li>
+              <li ng-if="::data.isAdmin"><a href="?id=lf&table=sys_ui_policy&filter=table%3D{{data.f.table}}%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10" ng-click="openRelatedList($event, {id:'lf', table: 'sys_ui_policy', filter: 'table%3D{{data.f.table}}%5EORtableIN{{data.f.table}},sys_metadata%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10'})">${UI Policies} <span class="badge pull-right" ng-if="f.policy.length">{{f.policy.length}}</span></a></li>
+              <li ng-if="::data.isAdmin"><a href="?id=lf&table=sys_script_client&filter=table%3D{{data.f.table}}%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10" ng-click="openRelatedList($event, {id: 'lf', table: 'sys_script_client', filter: 'table%3D{{data.f.table}}%5EORtableIN{{data.f.table}},sys_metadata%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10'})">${Client Scripts} <span class="badge pull-right" ng-if="adminMenu.getClientScriptCount()">{{adminMenu.getClientScriptCount()}}</span></a></li>
               <li ng-if="getUIActions('context').length > 0 &&  data.isAdmin" role="separator" class="divider"></li>
               <li ng-repeat="action in getUIActions('context')"><a href="" ng-click="triggerUIAction(action)">{{action.name}}</a></li>
               <li ng-if="::data.isAdmin || getUIActions('context').length > 0" role="separator" class="divider"></li>
