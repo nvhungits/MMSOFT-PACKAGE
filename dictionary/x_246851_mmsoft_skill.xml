@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element max_length="40" name="x_246851_mmsoft_skill" type="collection">
+        <element label="Skill" max_length="40" name="skill" type="string_full_utf8"/>
+    </element>
+</database>

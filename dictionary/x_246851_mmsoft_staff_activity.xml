@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element max_length="40" name="x_246851_mmsoft_staff_activity" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Date" max_length="40" name="date" type="glide_date"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Staff" max_length="40" name="staff" reference="x_246851_mmsoft_employee" type="reference"/>
+        <element label="Today" max_length="8000" name="today" type="html"/>
+        <element label="Yesterday" max_length="8000" name="yesterday" type="html"/>
+        <index name="index">
+            <element name="staff"/>
+        </index>
+    </element>
+</database>
