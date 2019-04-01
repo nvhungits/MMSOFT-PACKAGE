@@ -6,7 +6,7 @@
         <css/>
         <display_field>u_active</display_field>
         <field_list>number,u_hr_profile,u_timesheet_approver,u_week_commencing,u_state</field_list>
-        <filter table="x_246851_mmsoft_timesheet">u_hr_profile=gs.getUser().getID()<item endquery="false" field="u_hr_profile" goto="false" newquery="false" operator="=" or="false" value="gs.getUser().getID()"/>
+        <filter table="x_246851_mmsoft_timesheet">u_hr_profileDYNAMIC3c3d7efb4f10730031d578e18110c724<item endquery="false" field="u_hr_profile" goto="false" newquery="false" operator="DYNAMIC" or="false" value="3c3d7efb4f10730031d578e18110c724"/>
         </filter>
         <glyph>empty</glyph>
         <id/>
@@ -24,14 +24,14 @@
         <sys_created_by>ttnhi</sys_created_by>
         <sys_created_on>2019-03-26 07:28:34</sys_created_on>
         <sys_id>5bb142ab4fd0330031d578e18110c7ba</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Timesheet</sys_name>
         <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
         <sys_policy/>
         <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
         <sys_update_name>sp_instance_table_5bb142ab4fd0330031d578e18110c7ba</sys_update_name>
         <sys_updated_by>ttnhi</sys_updated_by>
-        <sys_updated_on>2019-03-28 07:13:55</sys_updated_on>
+        <sys_updated_on>2019-04-01 08:15:59</sys_updated_on>
         <table>x_246851_mmsoft_timesheet</table>
         <title>Timesheet</title>
         <url/>
