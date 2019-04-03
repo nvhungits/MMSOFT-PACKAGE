@@ -6,7 +6,7 @@
         <action_insert>true</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>true</active>
+        <active>false</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -36,19 +36,19 @@
 		var grTSheet = new GlideRecord("x_246851_mmsoft_timesheet");
 		grTSheet.get(current.u_timesheet);
 		if(week_day == "monday")
-			grTSheet.u_mon = total_hour;
+			grTSheet.u_mon += total_hour;
 		else if(week_day == "tuesday")
-			grTSheet.u_tue = total_hour;
+			grTSheet.u_tue += total_hour;
 		else if(week_day == "wednesday")
-			grTSheet.u_wed = total_hour;
+			grTSheet.u_wed += total_hour;
 		else if(week_day == "thursday")
-			grTSheet.u_thu = total_hour;
+			grTSheet.u_thu += total_hour;
 		else if(week_day == "friday")
-			grTSheet.u_fri = total_hour;
+			grTSheet.u_fri += total_hour;
 		else if(week_day == "saturday")
-			grTSheet.u_sat = total_hour;
+			grTSheet.u_sat += total_hour;
 		else if(week_day == "sunday")
-			grTSheet.u_sun = total_hour;
+			grTSheet.u_sun += total_hour;
 		grTSheet.update();
 	}
 
@@ -59,7 +59,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8d3ced444f10b30031d578e18110c7ae</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Update Timesheet' Week day Working Hours</sys_name>
         <sys_overrides/>
         <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
@@ -67,7 +67,7 @@
         <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
         <sys_update_name>sys_script_8d3ced444f10b30031d578e18110c7ae</sys_update_name>
         <sys_updated_by>ttnhi</sys_updated_by>
-        <sys_updated_on>2019-03-15 09:34:01</sys_updated_on>
+        <sys_updated_on>2019-04-02 07:16:19</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

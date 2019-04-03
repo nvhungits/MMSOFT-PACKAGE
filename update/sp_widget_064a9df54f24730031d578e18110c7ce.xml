@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope) {
+  var c = this;
+
+	console.log("|----Timesheet - Timesheet Task Table ----|");
+	console.log("Data: ", $scope.data);
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>/* Table */&#13;
+tr &gt; td {&#13;
+	width: 15%&#13;
+}&#13;
+.col_hour {&#13;
+	text-align: center;&#13;
+}&#13;
+.col_total_hour {&#13;
+	font-weight: bold;&#13;
+}&#13;
+/*Table - Header*/&#13;
+/*Table - Body*/&#13;
+&#13;
+#timesheetProject {&#13;
+  width: 30%&#13;
+}&#13;
+/*Table - Footer*/&#13;
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description>Widget is embed in Timesheet form</description>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>mms-timesheet-task-table</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>MMS Timesheet - Timesheet Task Table</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+
+	data.timesheet = $sp.getParameter("timesheet_id") || options.timesheet_id;
+	data.total_working_hours = {};
+	data.timesheetTask = getTasks();
+	//Get Timesheet Task List
+	
+	function getTasks(){
+		var l = [];
+		var regular = 0; 
+		var ot = 0; 
+		var total = 0;
+		var grTT = new GlideRecord("x_246851_mmsoft_timesheet_task");
+		grTT.addQuery("u_timesheet", data.timesheet);
+		grTT.orderBy("number");
+		grTT.orderBy("u_day_of_the_week");
+		grTT.query();
+		while(grTT.next()){
+			var regularHour =  grTT.getValue("u_hour");
+			var otHour= grTT.getValue("u_ot_hour");
+			var totalHour = grTT.getValue("u_total_hour");
+			var n = {
+				sys_id: grTT.getValue("sys_id"),
+				number: grTT.getValue("number"),
+				project: grTT.getDisplayValue("u_project") + '',
+				weekday: grTT.getDisplayValue("u_day_of_the_week") + '',
+				hour: regularHour == 0 ? null : regularHour  + '',
+				OTHour: otHour == 0 ? null : otHour + '',
+				totalHour: totalHour == 0 ? null : totalHour + ''
+			};
+			console.log("Timesheet: " + grTT.getValue("number") + 
+						"\nHour: " + regular + 
+						"\nOT: " + ot +
+					    "\nTotal: " + total);
+			console.log("-----------------------");
+			regular += parseFloat(regularHour);
+			ot += parseFloat(otHour);
+			total += parseFloat(totalHour);
+			l.push(n);
+		}
+		data.total_working_hours = {regular: regular, ot: ot, total: total};
+		return l;
+	}
+
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-04-02 04:23:34</sys_created_on>
+        <sys_id>064a9df54f24730031d578e18110c7ce</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>MMS Timesheet - Timesheet Task Table</sys_name>
+        <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+        <sys_update_name>sp_widget_064a9df54f24730031d578e18110c7ce</sys_update_name>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-04-03 04:19:51</sys_updated_on>
+        <template><![CDATA[<div>
+  <table class="table table-striped table-responsive">
+    <thead>
+      <th>Number</th>
+      <th>Weekday</th>
+      <th>Project</th>
+      <th class="col_hour">Regular Hour</th>
+      <th class="col_hour">OT Hour</th>
+      <th class="col_hour">Work Hours</th>
+    </thead>
+    <tbody>
+      <tr ng-repeat="task in data.timesheetTask track by $index | limitTo: data.timesheetTask.length-1">
+        <!--Number-->
+        <td><a id="timesheetNumber" ng-bind="task.number" ng-click="go(task)"></a></td>
+        <!--Weekday-->
+        <td id="timesheetWeekday" ng-bind="task.weekday"></td>
+        <!--Project-->
+        <td id="timesheetProject" ng-bind="task.project"></td>
+        <!--Regular Hour-->
+        <td id="timesheetHour" ng-bind="task.hour" class="col_hour"></td>
+        <!--OT Hour-->
+        <td id="timesheetOTHour" ng-bind="task.OTHour" class="col_hour"></td>
+        <!--Total Hour-->
+        <td id="timesheetTotalHour" ng-bind="task.totalHour" class="col_hour"></td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td id="WorkingHour_Label" colspan="3" class="col_hour col_total_hour">${Total}</td>
+        <td id="WorkingHour_Regular" ng-bind="data.total_working_hours.regular" class="col_hour col_total_hour"></td>
+        <td id="WorkingHour_OT" ng-bind="data.total_working_hours.ot" class="col_hour col_total_hour"></td>
+        <td id="WorkingHour_Total" ng-bind="data.total_working_hours.total" class="col_hour col_total_hour"></td>
+      </tr>
+    </tfoot>
+  </table>
+</div>]]></template>
+    </sp_widget>
+</record_update>

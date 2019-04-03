@@ -8,7 +8,7 @@
         <element label="Fri" max_length="40" name="u_fri" type="float"/>
         <element label="HR Manager" max_length="32" name="u_hr_manager" reference="x_246851_mmsoft_employee" type="reference"/>
         <element label="HR Profile" max_length="32" name="u_hr_profile" reference="x_246851_mmsoft_employee" type="reference"/>
-        <element label="Mon" max_length="40" name="u_mon" type="float"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;})(current);" label="Mon" max_length="40" name="u_mon" type="float"/>
         <element label="Period" max_length="40" name="u_period" type="string_full_utf8"/>
         <element label="Sat" max_length="40" name="u_sat" type="float"/>
         <element choice="1" label="State" max_length="40" name="u_state" type="choice">
@@ -23,7 +23,7 @@
         <element label="Thu" max_length="40" name="u_thu" type="float"/>
         <element label="Timesheet Approver" max_length="32" name="u_timesheet_approver" reference="x_246851_mmsoft_employee" type="reference"/>
         <element label="Total Hours" max_length="40" name="u_total_hours" type="float"/>
-        <element label="Tue" max_length="40" name="u_tue" type="float"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#13;&#10;&#9;var util = new TimesheetUtil();&#13;&#10;&#9;var hours = util.calculateWorkingHours(current.sys_id, &quot;Tuesday&quot;);&#13;&#10;&#9;return parseFloat(hours);&#13;&#10;&#13;&#10;})(current);" label="Tue" max_length="40" name="u_tue" type="float"/>
         <element label="Wed" max_length="40" name="u_wed" type="float"/>
         <element label="Week Commencing" max_length="40" name="u_week_commencing" type="string_full_utf8"/>
         <index name="index">

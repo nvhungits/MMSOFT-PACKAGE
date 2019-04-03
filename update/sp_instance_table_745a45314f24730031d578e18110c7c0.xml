@@ -6,7 +6,8 @@
         <css/>
         <display_field>u_active</display_field>
         <field_list>number,u_hr_profile,u_timesheet_approver,u_week_commencing,u_state</field_list>
-        <filter table="x_246851_mmsoft_timesheet">u_hr_profileDYNAMIC3c3d7efb4f10730031d578e18110c724<item endquery="false" field="u_hr_profile" goto="false" newquery="false" operator="DYNAMIC" or="false" value="3c3d7efb4f10730031d578e18110c724"/>
+        <filter table="x_246851_mmsoft_timesheet">u_hr_profileDYNAMIC3c3d7efb4f10730031d578e18110c724^EQ<item endquery="false" field="u_hr_profile" goto="false" newquery="false" operator="DYNAMIC" or="false" value="3c3d7efb4f10730031d578e18110c724"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
         <glyph>empty</glyph>
         <id/>
@@ -17,25 +18,25 @@
         <roles/>
         <short_description/>
         <size>md</size>
-        <sp_column display_value="1">c37142ab4fd0330031d578e18110c71b</sp_column>
+        <sp_column display_value="1">f05a45314f24730031d578e18110c7be</sp_column>
         <sp_page display_value="timesheet">9c01c2ab4fd0330031d578e18110c7cd</sp_page>
-        <sp_widget display_value="Data Table from Instance Definition">38058ff1cb11020000f8d856634c9c8c</sp_widget>
+        <sp_widget display_value="MMS Data Table from Instance Definition">44bcbcb54fe0730031d578e18110c752</sp_widget>
         <sys_class_name>sp_instance_table</sys_class_name>
         <sys_created_by>ttnhi</sys_created_by>
-        <sys_created_on>2019-03-26 07:28:34</sys_created_on>
-        <sys_id>5bb142ab4fd0330031d578e18110c7ba</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_created_on>2019-04-02 03:12:47</sys_created_on>
+        <sys_id>745a45314f24730031d578e18110c7c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Timesheet</sys_name>
         <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
         <sys_policy/>
         <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
-        <sys_update_name>sp_instance_table_5bb142ab4fd0330031d578e18110c7ba</sys_update_name>
+        <sys_update_name>sp_instance_table_745a45314f24730031d578e18110c7c0</sys_update_name>
         <sys_updated_by>ttnhi</sys_updated_by>
-        <sys_updated_on>2019-04-01 08:15:59</sys_updated_on>
+        <sys_updated_on>2019-04-02 03:12:47</sys_updated_on>
         <table>x_246851_mmsoft_timesheet</table>
         <title>Timesheet</title>
         <url/>
         <widget_parameters/>
     </sp_instance_table>
-    <sys_translated_text action="delete_multiple" query="documentkey=5bb142ab4fd0330031d578e18110c7ba"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=745a45314f24730031d578e18110c7c0"/>
 </record_update>

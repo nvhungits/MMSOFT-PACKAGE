@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Timesheet Task" max_length="40" name="x_246851_mmsoft_timesheet_task" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Activity" max_length="1000" name="u_activity" type="string"/>
         <element choice="1" label="Day of the week" max_length="40" name="u_day_of_the_week" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Monday" sequence="100" value="monday"/>
-                <element inactive_on_update="false" label="Tuesday" sequence="200" value="tuesday"/>
-                <element inactive_on_update="false" label="Wednesday" sequence="300" value="wednesday"/>
-                <element inactive_on_update="false" label="Thursday" sequence="400" value="thursday"/>
-                <element inactive_on_update="false" label="Friday" sequence="500" value="friday"/>
-                <element inactive_on_update="false" label="Saturday" sequence="600" value="saturday"/>
-                <element inactive_on_update="false" label="Sunday" sequence="700" value="sunday"/>
+                <element inactive_on_update="false" label="Monday" sequence="100" value="Monday"/>
+                <element inactive_on_update="false" label="Tuesday" sequence="200" value="Tuesday"/>
+                <element inactive_on_update="false" label="Wednesday" sequence="300" value="Wednesday"/>
+                <element inactive_on_update="false" label="Thursday" sequence="400" value="Thursday"/>
+                <element inactive_on_update="false" label="Friday" sequence="500" value="Friday"/>
+                <element inactive_on_update="false" label="Saturday" sequence="600" value="Saturday"/>
+                <element inactive_on_update="false" label="Sunday" sequence="700" value="Sunday"/>
             </choice>
         </element>
         <element label="Hour" max_length="40" name="u_hour" type="float"/>

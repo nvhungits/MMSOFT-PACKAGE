@@ -14,10 +14,10 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>b57c6f5f4f84330031d578e18110c79b</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>4</sys_mod_count>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-13 10:21:31</sys_updated_on>
-            <value>monday</value>
+            <sys_updated_on>2019-04-02 07:15:20</sys_updated_on>
+            <value>Monday</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -33,10 +33,10 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>177c6f5f4f84330031d578e18110c79c</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-13 10:21:56</sys_updated_on>
-            <value>tuesday</value>
+            <sys_updated_on>2019-04-02 07:15:48</sys_updated_on>
+            <value>Tuesday</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -52,10 +52,10 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>c6bca3df4f84330031d578e18110c753</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-13 10:22:08</sys_updated_on>
-            <value>wednesday</value>
+            <sys_updated_on>2019-04-02 07:15:53</sys_updated_on>
+            <value>Wednesday</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -71,10 +71,10 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>edccab5f4f84330031d578e18110c71d</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>4</sys_mod_count>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-13 10:22:21</sys_updated_on>
-            <value>thursday</value>
+            <sys_updated_on>2019-04-02 07:15:44</sys_updated_on>
+            <value>Thursday</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -90,10 +90,10 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>e0dc67df4f84330031d578e18110c743</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-13 10:22:29</sys_updated_on>
-            <value>friday</value>
+            <sys_updated_on>2019-04-02 07:15:16</sys_updated_on>
+            <value>Friday</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -109,10 +109,10 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>4bdce7df4f84330031d578e18110c7aa</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-13 10:22:46</sys_updated_on>
-            <value>saturday</value>
+            <sys_updated_on>2019-04-02 07:15:29</sys_updated_on>
+            <value>Saturday</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -128,10 +128,10 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>eaece7df4f84330031d578e18110c7fa</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-13 10:22:54</sys_updated_on>
-            <value>sunday</value>
+            <sys_updated_on>2019-04-02 07:15:33</sys_updated_on>
+            <value>Sunday</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>u_day_of_the_week</element>
@@ -139,7 +139,7 @@
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>ttnhi</sys_created_by>
             <sys_created_on>2019-03-13 10:20:47</sys_created_on>
-            <sys_id>54bbb0294fa4330031d578e18110c794</sys_id>
+            <sys_id>fdb9f4fd4fa0730031d578e18110c743</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>u_day_of_the_week</sys_name>
             <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_246851_mmsoft.TimesheetUtil</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>TimesheetUtil</name>
+        <script><![CDATA[var TimesheetUtil = Class.create();
+TimesheetUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	/*
+	Collect Weekly Working Hours
+	*param id: timesheet id
+	*/
+	getWeeklyWorkingHour: function(id){
+		if(id == "" || id == null || id == undefined)
+			id = this.getParameter("id");
+		var weekday = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+		var workingHours = {Monday: 0, Tuesday: 0, Wednesday: 0, Thursday: 0, Friday: 0, Saturday: 0, Sunday: 0};
+		gs.info("Timesheet: " + id);
+		for(var i in weekday){
+			workingHours[weekday[i]] = this.calculateWorkingHours(id, weekday[i]);
+		}
+		return workingHours;
+	},
+
+	/*
+	Calculate Daily Total working hours base on day
+	@param day: the day of week
+	@param id: timesheet id
+	*/
+	calculateWorkingHours: function(id, day){
+		if(day == null || day == "" || day == undefined)
+			day = this.getParameter("day");
+		if(id == null || id == "" || id == undefined)
+			id = this.getParameter("id");
+		var gr = new GlideRecord("x_246851_mmsoft_timesheet_task");
+		gr.addQuery("u_timesheet", id);
+		gr.addQuery("u_day_of_the_week", day);
+		gr.query();
+		var totalHours = 0;
+		while(gr.next()){
+			totalHours += parseFloat(gr.getValue("u_total_hour"));
+		}
+		return totalHours;
+	},
+
+	type: 'TimesheetUtil'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-04-02 07:13:33</sys_created_on>
+        <sys_id>135102394fa4730031d578e18110c7fe</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>TimesheetUtil</sys_name>
+        <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+        <sys_update_name>sys_script_include_135102394fa4730031d578e18110c7fe</sys_update_name>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-04-02 09:53:14</sys_updated_on>
+    </sys_script_include>
+</record_update>

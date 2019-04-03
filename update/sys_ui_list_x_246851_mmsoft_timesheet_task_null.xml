@@ -2,108 +2,93 @@
     <sys_ui_list parent="" relationship="" sys_domain="global" table="x_246851_mmsoft_timesheet_task" version="2" view="">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>u_activity</element>
-            <list_id display_value="x_246851_mmsoft_timesheet_task" element="NULL" name="x_246851_mmsoft_timesheet_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">de23df974f44330031d578e18110c711</list_id>
+            <element>number</element>
+            <list_id display_value="x_246851_mmsoft_timesheet_task" element="NULL" name="x_246851_mmsoft_timesheet_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">cbca0a864f60b30031d578e18110c7d9</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-14 03:24:27</sys_created_on>
-            <sys_id>dac69bab4fcc330031d578e18110c7a5</sys_id>
+            <sys_created_on>2019-04-03 02:32:57</sys_created_on>
+            <sys_id>07ca0a864f60b30031d578e18110c7da</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-14 03:24:27</sys_updated_on>
+            <sys_updated_on>2019-04-03 02:32:57</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>u_day_of_the_week</element>
-            <list_id display_value="x_246851_mmsoft_timesheet_task" element="NULL" name="x_246851_mmsoft_timesheet_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">de23df974f44330031d578e18110c711</list_id>
+            <element>u_project</element>
+            <list_id display_value="x_246851_mmsoft_timesheet_task" element="NULL" name="x_246851_mmsoft_timesheet_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">cbca0a864f60b30031d578e18110c7d9</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-14 03:24:27</sys_created_on>
-            <sys_id>52c69bab4fcc330031d578e18110c7a6</sys_id>
+            <sys_created_on>2019-04-03 02:32:57</sys_created_on>
+            <sys_id>87ca0a864f60b30031d578e18110c7da</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-14 03:24:27</sys_updated_on>
+            <sys_updated_on>2019-04-03 02:32:57</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>u_hour</element>
-            <list_id display_value="x_246851_mmsoft_timesheet_task" element="NULL" name="x_246851_mmsoft_timesheet_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">de23df974f44330031d578e18110c711</list_id>
+            <element>u_day_of_the_week</element>
+            <list_id display_value="x_246851_mmsoft_timesheet_task" element="NULL" name="x_246851_mmsoft_timesheet_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">cbca0a864f60b30031d578e18110c7d9</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-14 03:24:27</sys_created_on>
-            <sys_id>d2c69bab4fcc330031d578e18110c7a6</sys_id>
+            <sys_created_on>2019-04-03 02:32:57</sys_created_on>
+            <sys_id>0bca0a864f60b30031d578e18110c7da</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-14 03:24:27</sys_updated_on>
+            <sys_updated_on>2019-04-03 02:32:57</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>u_ot</element>
-            <list_id display_value="x_246851_mmsoft_timesheet_task" element="NULL" name="x_246851_mmsoft_timesheet_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">de23df974f44330031d578e18110c711</list_id>
+            <element>u_hour</element>
+            <list_id display_value="x_246851_mmsoft_timesheet_task" element="NULL" name="x_246851_mmsoft_timesheet_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">cbca0a864f60b30031d578e18110c7d9</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-14 03:24:27</sys_created_on>
-            <sys_id>56c69bab4fcc330031d578e18110c7a6</sys_id>
+            <sys_created_on>2019-04-03 02:32:57</sys_created_on>
+            <sys_id>8bca0a864f60b30031d578e18110c7da</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-14 03:24:27</sys_updated_on>
+            <sys_updated_on>2019-04-03 02:32:57</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>u_ot_hour</element>
-            <list_id display_value="x_246851_mmsoft_timesheet_task" element="NULL" name="x_246851_mmsoft_timesheet_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">de23df974f44330031d578e18110c711</list_id>
+            <element>u_ot</element>
+            <list_id display_value="x_246851_mmsoft_timesheet_task" element="NULL" name="x_246851_mmsoft_timesheet_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">cbca0a864f60b30031d578e18110c7d9</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-14 03:24:27</sys_created_on>
-            <sys_id>d6c69bab4fcc330031d578e18110c7a6</sys_id>
+            <sys_created_on>2019-04-03 02:32:57</sys_created_on>
+            <sys_id>0fca0a864f60b30031d578e18110c7da</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-14 03:24:27</sys_updated_on>
+            <sys_updated_on>2019-04-03 02:32:57</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>u_project</element>
-            <list_id display_value="x_246851_mmsoft_timesheet_task" element="NULL" name="x_246851_mmsoft_timesheet_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">de23df974f44330031d578e18110c711</list_id>
+            <element>u_ot_hour</element>
+            <list_id display_value="x_246851_mmsoft_timesheet_task" element="NULL" name="x_246851_mmsoft_timesheet_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">cbca0a864f60b30031d578e18110c7d9</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-14 03:24:27</sys_created_on>
-            <sys_id>5ac69bab4fcc330031d578e18110c7a6</sys_id>
+            <sys_created_on>2019-04-03 02:32:57</sys_created_on>
+            <sys_id>8fca0a864f60b30031d578e18110c7da</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-14 03:24:27</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>u_timehsheet</element>
-            <list_id display_value="x_246851_mmsoft_timesheet_task" element="NULL" name="x_246851_mmsoft_timesheet_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">de23df974f44330031d578e18110c711</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>6</position>
-            <sum>false</sum>
-            <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-14 03:24:27</sys_created_on>
-            <sys_id>dac69bab4fcc330031d578e18110c7a6</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-14 03:24:27</sys_updated_on>
+            <sys_updated_on>2019-04-03 02:32:57</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -117,10 +102,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>ttnhi</sys_created_by>
-            <sys_created_on>2019-03-13 08:30:08</sys_created_on>
+            <sys_created_on>2019-04-03 02:32:57</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>de23df974f44330031d578e18110c711</sys_id>
+            <sys_id>cbca0a864f60b30031d578e18110c7d9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_246851_mmsoft_timesheet_task</sys_name>
             <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
@@ -128,7 +113,7 @@
             <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
             <sys_update_name>sys_ui_list_x_246851_mmsoft_timesheet_task_null</sys_update_name>
             <sys_updated_by>ttnhi</sys_updated_by>
-            <sys_updated_on>2019-03-13 08:30:08</sys_updated_on>
+            <sys_updated_on>2019-04-03 02:32:57</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
