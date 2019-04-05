@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item">
+    <sp_rectangle_menu_item action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <color>default</color>
+        <condition>javascript: new x_246851_mmsoft.MMSUtils().getDetails(gs.getUser().getID(), "u_need_report") == true</condition>
+        <display_1/>
+        <display_2/>
+        <display_date/>
+        <filter/>
+        <glyph/>
+        <hint/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <label>My Timesheet</label>
+        <order>100</order>
+        <record_script/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <sp_page display_value="timesheet">9c01c2ab4fd0330031d578e18110c7cd</sp_page>
+        <sp_rectangle_menu display_value="MMS Header Menu">ef49fc724f6cf30031d578e18110c7e0</sp_rectangle_menu>
+        <sp_rectangle_menu_item/>
+        <sys_class_name>sp_rectangle_menu_item</sys_class_name>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-04-05 04:43:15</sys_created_on>
+        <sys_id>0d7974b24f6cf30031d578e18110c792</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>My Timesheet</sys_name>
+        <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+        <sys_update_name>sp_rectangle_menu_item_0d7974b24f6cf30031d578e18110c792</sys_update_name>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-04-05 06:11:12</sys_updated_on>
+        <table/>
+        <type>page</type>
+        <url/>
+        <url_target/>
+    </sp_rectangle_menu_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=0d7974b24f6cf30031d578e18110c792"/>
+</record_update>

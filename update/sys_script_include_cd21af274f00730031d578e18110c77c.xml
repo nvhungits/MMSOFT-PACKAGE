@@ -16,6 +16,15 @@ MMSUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		return gs.getUser().getID();
 	},
 	/*
+	GET user details base on fields
+	*/
+	getDetails: function(id, field){
+		var gr = new GlideRecord("x_246851_mmsoft_employee");
+		gr.get(id);
+		gs.info("User: " + gs.getUser().getName() + "\nNeed Report: " + gr.getValue(field));
+		return gr.getValue(field);
+	},
+	/*
 	GET User Details
 	* @id: user id
 	*/
@@ -112,13 +121,13 @@ MMSUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>ttnhi</sys_created_by>
         <sys_created_on>2019-03-14 04:13:49</sys_created_on>
         <sys_id>cd21af274f00730031d578e18110c77c</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>45</sys_mod_count>
         <sys_name>MMSUtils</sys_name>
         <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
         <sys_policy/>
         <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
         <sys_update_name>sys_script_include_cd21af274f00730031d578e18110c77c</sys_update_name>
         <sys_updated_by>ttnhi</sys_updated_by>
-        <sys_updated_on>2019-03-28 07:20:01</sys_updated_on>
+        <sys_updated_on>2019-04-05 06:11:35</sys_updated_on>
     </sys_script_include>
 </record_update>

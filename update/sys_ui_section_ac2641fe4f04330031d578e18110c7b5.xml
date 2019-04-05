@@ -364,6 +364,48 @@
             <sys_user/>
             <type/>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>report_activities</element>
+            <position>26</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-04-03 06:32:47</sys_created_on>
+            <sys_id>c8b18f4e4fe0b30031d578e18110c707</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_employee" sys_domain="global" view="Default view">ac2641fe4f04330031d578e18110c7b5</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-04-03 06:32:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>need_report</element>
+            <position>27</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-04-03 06:38:00</sys_created_on>
+            <sys_id>68e287024f24b30031d578e18110c7a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_employee" sys_domain="global" view="Default view">ac2641fe4f04330031d578e18110c7b5</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-04-03 06:38:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_need_report</element>
+            <position>28</position>
+            <sys_created_by>ttnhi</sys_created_by>
+            <sys_created_on>2019-04-03 06:39:04</sys_created_on>
+            <sys_id>882303424f24b30031d578e18110c7b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_246851_mmsoft_employee" sys_domain="global" view="Default view">ac2641fe4f04330031d578e18110c7b5</sys_ui_section>
+            <sys_updated_by>ttnhi</sys_updated_by>
+            <sys_updated_on>2019-04-03 06:39:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>

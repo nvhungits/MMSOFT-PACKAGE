@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_angular_provider">
+    <sp_angular_provider action="INSERT_OR_UPDATE">
+        <name>mmsTimesheetSubmitButton</name>
+        <script><![CDATA[function() {
+	return {
+		template: "<button ng-if='showhideSubmitButton()' " +
+		"ng-click='doSubmit()' " +
+		"class='btn btn-default {{isDisabled}}' >" +
+		"${Submit}</button>",
+		controller: function($scope, srvMMSManagement){
+			console.log("Data in Submit button: ", $scope.data);
+			$scope.showhideSubmitButton = function(){
+				if($scope.data.state == "draft" && 
+				   ($scope.data.hr_profile == $scope.data.userID ||
+				   $scope.data.timesheet_approver == $scope.data.userID ||
+				   $scope.data.isAdmin))
+					return true;
+				return false;
+			};
+			
+			$scope.doSubmit = function(){
+				$scope.data.action = "submit";
+				$scope.data.submit_action = true;
+				$scope.server.update();
+			};
+		}
+	};
+}]]></script>
+        <sys_class_name>sp_angular_provider</sys_class_name>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-04-03 08:29:54</sys_created_on>
+        <sys_id>b94c5f064f64b30031d578e18110c7be</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>mmsTimesheetSubmitButton</sys_name>
+        <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+        <sys_update_name>sp_angular_provider_b94c5f064f64b30031d578e18110c7be</sys_update_name>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-04-04 02:53:11</sys_updated_on>
+        <type>directive</type>
+    </sp_angular_provider>
+</record_update>

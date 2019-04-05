@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element extends="sys_user" label="Employee" max_length="40" name="x_246851_mmsoft_employee" type="collection">
         <element label="Manager" max_length="32" name="u_manager" reference="x_246851_mmsoft_employee" type="reference"/>
+        <element label="Need Report" max_length="40" name="u_need_report" type="boolean"/>
         <element choice="1" label="Team" max_length="40" name="u_team" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Growthops" sequence="0" value="growthops"/>

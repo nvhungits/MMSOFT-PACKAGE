@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_angular_provider">
+    <sp_angular_provider action="INSERT_OR_UPDATE">
+        <name>srvMMSManagement</name>
+        <script><![CDATA[function($timeout, $location){
+	
+	/*
+	Perform refresh page
+	@parms p: pages id
+	@parms t: table
+	@parms id: recrod sys_id
+	*/
+	this.dorefresh = function(p, t, id){
+		var s = "/mms?id=" + p + "&table=" + t + "&sys_id=" + id + "&stamp=" + Date.now();
+		$timeout(function(){
+			$location.url(s);
+		});
+	};
+	
+}]]></script>
+        <sys_class_name>sp_angular_provider</sys_class_name>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-04-04 02:42:09</sys_created_on>
+        <sys_id>80e3df9e4facb30031d578e18110c754</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>srvMMSManagement</sys_name>
+        <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+        <sys_update_name>sp_angular_provider_80e3df9e4facb30031d578e18110c754</sys_update_name>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-04-04 02:42:09</sys_updated_on>
+        <type>service</type>
+    </sp_angular_provider>
+</record_update>

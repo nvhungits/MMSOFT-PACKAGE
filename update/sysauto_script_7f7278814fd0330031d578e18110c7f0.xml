@@ -23,6 +23,7 @@ _log += "\n- Current: " + new GlideDateTime();
 _log += "\n- Monday: " + monday;
 _log += "\n- Sunday: " + sunday;
 var grEmployee = new GlideRecord("x_246851_mmsoft_employee");
+grEmployee.addQuery("u_need_report", true);
 grEmployee.addActiveQuery();
 grEmployee.query();
 while(grEmployee.next()){
@@ -70,14 +71,14 @@ function convertNumbertoMonth(num){
         <sys_created_by>ttnhi</sys_created_by>
         <sys_created_on>2019-03-18 07:18:07</sys_created_on>
         <sys_id>7f7278814fd0330031d578e18110c7f0</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>MMSOFT - Weekly timesheet</sys_name>
         <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
         <sys_policy/>
         <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
         <sys_update_name>sysauto_script_7f7278814fd0330031d578e18110c7f0</sys_update_name>
         <sys_updated_by>ttnhi</sys_updated_by>
-        <sys_updated_on>2019-04-01 08:17:45</sys_updated_on>
+        <sys_updated_on>2019-04-03 07:57:53</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
 </record_update>

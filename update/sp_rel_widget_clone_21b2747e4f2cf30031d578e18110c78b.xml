@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="MMS Login">65b2747e4f2cf30031d578e18110c788</child>
+        <cloned>2019-04-05 04:03:33</cloned>
+        <last_validated>2019-04-05 04:03:33</last_validated>
+        <parent display_value="Login">6506d341cb33020000f8d856634c9cdc</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;standard&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function loginCtrl($scope, $http, $window, $location, glideUserSession, glideSystemProperties, spUtil) {
+
+	var c = this;
+	c.remember_me = c.data.forgetMeDefault;
+
+	if (!c.data.is_logged_in &amp;&amp; c.data.multisso_enabled &amp;&amp; c.data.default_idp) {
+		c.server.get({
+			action: "set_sso_destination",
+			pageURI: c.data.pageURI
+		}).then(function() {
+			$window.location = "/login_with_sso.do?glide_sso_id=" + c.data.default_idp;
+		});
+	}
+
+	c.login = function(username, password) {
+		var url = spUtil.getURL({sysparm_type: 'view_form.login'});
+		
+		// If the page isn't public, then the ID in the
+		// URL won't match the rendered page ID
+		var pageId = $location.search().id || $scope.page.id;
+		var isLoginPage = $scope.portal.login_page_dv == pageId;
+
+		return $http({
+			method: 'post',
+			url: url,
+			data: $.param({
+				'sysparm_type': 'login',
+				'ni.nolog.user_password': true,
+				'remember_me': !!c.remember_me ? true : false,
+				'user_name': username,
+				'user_password': password,
+				'get_redirect_url': true,
+				'sysparm_goto_url': isLoginPage ? null : $location.url(),
+				'mfa_redirect_url': c.data.pageURI
+			}),
+			headers: {
+				'Content-Type': 'application/x-www-form-urlencoded'
+			}
+		}).then(function(response) {
+			if (!response.data) {
+				c.message = $scope.data.errorMsg;
+				return;
+			}
+
+			if (response.data.status == 'success') {
+				if (c.data.multiFactorAuthEnabled) {
+					c.server.get({
+						action: "multi_factor_auth_setup",
+						directTo: response.data.redirect_url
+					}).then(handleLoginSuccess.bind(response));
+				} else {
+					handleLoginSuccess.call(response);
+				}
+			} else if (response.data.status == 'mfa_code_required') {
+					$window.location = '/validate_multifactor_auth_code.do';
+			} else {
+				// wrong username or password
+				c.message = response.data.message;
+				c.password = "";
+				c.username = "";
+				angular.element("#username").focus();
+			}
+
+		}, function errorCallback(response) {
+			c.message = $scope.data.errorMsg;
+		});
+	};
+
+	c.externalLogin = function() {
+		c.server.get({
+			action: "set_sso_destination",
+			pageURI: c.data.pageURI
+		}).then(function() {
+			glideSystemProperties.set("glide.authenticate.multisso.enabled", true);
+
+			glideUserSession.getSsoRedirectUrlForUsername(c.username)
+				.then(function(url) {
+					$window.location = url;
+				}, function(err) {
+					spUtil.addErrorMessage($scope.data.errorMsg2);
+				});
+		});
+	}
+
+	function handleLoginSuccess() {
+		c.success = this.data.message;
+		$window.location = this.data.redirect_url;
+	}
+
+	c.setExternalLogin = function(newVal) {
+		c.externalLoginMode = newVal;
+	}
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.set-login-type-link {
+  margin-top: 10px;
+  display: block;
+}
+
+.form-control,
+label[for="username"],
+label[for="password"] {
+	color: black;
+}
+
+.btn {
+	font-weight: 600;
+  font-size: 2.0rem;
+  background-color: $login-btn-bg;
+  border-color: $login-btn-border;
+}
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;widget-login&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Login&lt;/name&gt;&lt;option_schema&gt;[{"name":"show_panel","section":"Presentation","default_value":"true","label":"Show Panel","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	options.show_panel = options.show_panel == "true" || options.show_panel == true;
+	
+	if (input &amp;&amp; input.action === "multi_factor_auth_setup") {
+		if (gs.getSession().getProperty("setup_multifactor_authn")) {
+			gs.getSession().putProperty("nav_to", input.directTo);
+			gs.getSession().putProperty("starting_page", input.directTo);
+			gs.getSession().putProperty("is_direct_redirect", "true");
+		}
+		return;
+	}
+	
+	// We don't want to set a starting page until we've begun the login process.
+	if (input &amp;&amp; input.action === "set_sso_destination") {
+		var gs_nav_to = gs.getSession().getProperty("nav_to");
+		gs.getSession().putProperty("nav_to", null);
+		if (!gs.getSession().getProperty("starting_page"))
+			gs.getSession().putProperty("starting_page", gs_nav_to);
+
+		return;
+	}
+
+	data.errorMsg = gs.getMessage("There was an error processing your request");
+	data.errorMsg2 = gs.getMessage("An error has occurred - please contact your system administrator");
+	data.passwordMsg = gs.getMessage("Password");
+	data.usernameMsg = gs.getMessage("User name");
+	data.forgetMe = GlideProperties.getBoolean("glide.ui.forgetme");
+	data.forgetMeDefault = GlideProperties.getBoolean('glide.ui.remember.me.default', true);
+	data.is_logged_in = gs.getSession().isLoggedIn();
+	var bypass_sso = options.bypass_sso == "true";
+	data.multisso_enabled = !bypass_sso &amp;&amp; GlideProperties.getBoolean("glide.authenticate.multisso.enabled");			
+	data.default_idp = GlideProperties.get("glide.authenticate.sso.redirect.idp");
+	data.pageURI = new GlideSPUtil().getPageUri();
+	data.multiFactorAuthEnabled = GlideProperties.getBoolean('glide.authenticate.multifactor', false);
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;true&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2015-11-16 21:42:24&lt;/sys_created_on&gt;&lt;sys_id&gt;6506d341cb33020000f8d856634c9cdc&lt;/sys_id&gt;&lt;sys_mod_count&gt;317&lt;/sys_mod_count&gt;&lt;sys_name&gt;Login&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Core" source="com.glide.service-portal"&gt;5fef9771ddc323007850f2ee37a039e7&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_6506d341cb33020000f8d856634c9cdc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-10-04 19:01:11&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-if="!data.is_logged_in"&gt;
+  &lt;form ng-if="!c.externalLoginMode" class="form-signin" ng-submit="c.login(c.username, c.password)" method="post"&gt;
+		&lt;div ng-class="{'panel panel-default': c.options.show_panel}"&gt;
+			&lt;div ng-if="c.options.show_panel" class="panel-heading"&gt;	      
+				&lt;h3 class="panel-title"&gt;${Login}&lt;/h3&gt;
+			&lt;/div&gt;
+
+			&lt;div ng-class="{'panel-body': c.options.show_panel}"&gt;
+
+				&lt;div class="list-group list-group-sm"&gt;
+					&lt;div class="list-group-item"&gt;
+            &lt;label for="username" class="sr-only"&gt;{{::data.usernameMsg}}&lt;/label&gt;
+            &lt;input id="username" name="username" autocapitalize="off" ng-keypress="c.message = ''" ng-click="c.message = ''" class="form-control no-border" type="text" placeholder='{{::data.usernameMsg}}' autofocus="true" ng-model="c.username"/&gt;
+					&lt;/div&gt;
+					&lt;div class="list-group-item"&gt;
+            &lt;label for="password" class="sr-only"&gt;{{::data.passwordMsg}}&lt;/label&gt;
+            &lt;input id="password" name="password" ng-keypress="c.message = ''" ng-click="c.message = ''" class="form-control no-border" type="password" placeholder='{{::data.passwordMsg}}' ng-model="c.password"/&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;div ng-if="c.message" class="alert alert-danger" role="alert"&gt;{{c.message}}&lt;/div&gt;
+				&lt;div ng-if="c.success" class="alert alert-success" role="alert"&gt;{{c.success}}&lt;/div&gt;
+
+				&lt;div ng-if="!c.data.forgetMe" class="checkbox"&gt;
+          &lt;label&gt;
+            &lt;input name="c.remember_me" ng-model="c.remember_me" checked="checked" id="remember_me" type="checkbox" class="checkbox" value="true"/&gt; ${Remember me}
+					&lt;/label&gt;
+				&lt;/div&gt;
+
+        &lt;button name="login" type="submit" class="btn btn-lg btn-primary btn-block"&gt;
+          ${Login}
+        &lt;/button&gt;
+
+        &lt;a ng-if="data.multisso_enabled"
+           class="set-login-type-link"
+           href="javascript:void(0)"
+           ng-click="c.setExternalLogin(true)"&gt;${Use external login}&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/form&gt;
+	&lt;form ng-if="c.externalLoginMode" class="form-signin" ng-submit="c.externalLogin()" method="post"&gt;
+		&lt;div ng-class="{'panel panel-default': c.options.show_panel}"&gt;
+			&lt;div ng-if="c.options.show_panel" class="panel-heading"&gt;
+				&lt;h3 class="panel-title"&gt;${External Login}&lt;/h3&gt;
+			&lt;/div&gt;
+
+			&lt;div ng-class="{'panel-body': c.options.show_panel}"&gt;
+				&lt;div class="list-group list-group-sm"&gt;
+					&lt;div class="list-group-item"&gt;
+            &lt;label for="username" class="sr-only"&gt;${User ID}&lt;/label&gt;
+            &lt;input id="username" name="username" ng-click="message = ''" class="form-control no-border" type="text" placeholder='${User ID}' autofocus="true" ng-model="c.username"/&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+        &lt;button name="login" type="submit" class="btn btn-lg btn-primary btn-block"&gt;
+          ${Submit}
+        &lt;/button&gt;
+
+        &lt;a href="javascript:void(0)"
+           class="set-login-type-link"
+           ng-click="c.setExternalLogin(false)"&gt;${Use internal login}&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/form&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>ttnhi</sys_created_by>
+        <sys_created_on>2019-04-05 04:03:33</sys_created_on>
+        <sys_id>21b2747e4f2cf30031d578e18110c78b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>65b2747e4f2cf30031d578e18110c788</sys_name>
+        <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_21b2747e4f2cf30031d578e18110c78b</sys_update_name>
+        <sys_updated_by>ttnhi</sys_updated_by>
+        <sys_updated_on>2019-04-05 04:03:33</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>

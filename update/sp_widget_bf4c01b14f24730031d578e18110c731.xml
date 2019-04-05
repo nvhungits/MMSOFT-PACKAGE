@@ -110,11 +110,13 @@
     $scope.$evalAsync(function() {
       if (g_form) {
         $scope.submitting = true;
-        if (!g_form.submit(action.action_name || action.sys_id))
-          $scope.submitting = false;
+        if (!g_form.submit(action.action_name || action.sys_id)){
+          $scope.submitting = false;		
+			$scope.isButtonActive = "disabled";
+		}
       }
     });
-  }
+  };
 
   $scope.$on("spModel.uiActionComplete", function(evt, response) {
     $scope.submitting = false;
@@ -236,6 +238,15 @@
     }
     return true;
   }
+	
+  function dorefresh($timesout){
+	  var s = "/mms?timesheet&table=" + $scope.data.table +
+		  "&sys_id=" + $scope.data.sys_id + "&stamp=" + Date.now();
+	  $timeout(function(){
+		 clearStatus();
+		  $location.url(s);
+	  });
+  }
 
   function clearStatus() {
     $scope.status = "";
@@ -271,127 +282,127 @@
   }
 }]]></client_script>
         <controller_as>c</controller_as>
-        <css>.btn-form-menu {
-	vertical-align: inherit;
-  padding: inherit;
-  background: none;
-}
-
-.panel-title {
-  word-wrap: break-word;
-}
-
-.panel-heading {
-  .dropdown-menu {
-    a {
-      white-space: normal;
-    }
-  }
-}
-
-.sc-field-error-label {
-  margin-right: .5em;
-  display: inline-block;
-  background-color: $sc-field-error-color;
-}
-
-.comment {
-	font-weight: bold;
-	margin-top: 2px;
-	margin-bottom: 2px;
-}
-.mce-panel, .mce-btn {
-	background-image: none;
-	background-color: #f0f3f4;
-}
-
-.action-btn {
-  margin-right: 5px;
-}
-
-.timeline-container {
-   max-height: 50vh;
-   height: 100%;
-   overflow-y: auto;
-}
-
-.panel .panel {
-    height: auto !important;
-}
-
-.attachment-button {
-  .glyphicon-paperclip {
-    font-size: 18px;
-  }
-}
-
-.dropdown {
-  .glyphicon-menu-hamburger:focus {
- 		outline: thin dotted;
-		outline: 5px auto $input-border-focus;
-		outline-offset: -2px; 
-	}
-}
-
-.empty-state-wrapper {
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 10vh 20px 20px;
-
-  .empty-state {
-    border: 1px solid #e7e9eb;
-    border-radius: 10px;
-    max-width: 700px;
-    padding: 30px 40px 20px;
-    position: relative;
-
-    .empty-state-badge {
-      top: -36px;
-      left: 50%;
-      position: absolute;
-      height: 72px;
-      width: 72px;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-      border-radius: 100%;
-      color: #ffffff;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      font-size: 40px;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      margin-left: -36px;
-      text-align: center;
-    }
-
-    .empty-state-header {
-      font-size: 30px;
-      text-align: center;
-      color: #343d47;
-    }
-
-    .empty-state-content {
-      ul {
-        list-style: disc outside;
-        margin: 0 0 10px 0;
-        padding: 0 0 0 30px;
-      }
-    }
-  }
-}
-
-.text-success-alt {
-	background-color: $state-success-text;
-}
-
-.text-info-alt {
-	background-color: $state-info-text;
+        <css>.btn-form-menu {&#13;
+	vertical-align: inherit;&#13;
+  padding: inherit;&#13;
+  background: none;&#13;
+}&#13;
+&#13;
+.panel-title {&#13;
+  word-wrap: break-word;&#13;
+}&#13;
+&#13;
+.panel-heading {&#13;
+  .dropdown-menu {&#13;
+    a {&#13;
+      white-space: normal;&#13;
+    }&#13;
+  }&#13;
+}&#13;
+&#13;
+.sc-field-error-label {&#13;
+  margin-right: .5em;&#13;
+  display: inline-block;&#13;
+  background-color: $sc-field-error-color;&#13;
+}&#13;
+&#13;
+.comment {&#13;
+	font-weight: bold;&#13;
+	margin-top: 2px;&#13;
+	margin-bottom: 2px;&#13;
+}&#13;
+.mce-panel, .mce-btn {&#13;
+	background-image: none;&#13;
+	background-color: #f0f3f4;&#13;
+}&#13;
+&#13;
+.action-btn {&#13;
+  margin-right: 7px;&#13;
+}&#13;
+&#13;
+.timeline-container {&#13;
+   max-height: 50vh;&#13;
+   height: 100%;&#13;
+   overflow-y: auto;&#13;
+}&#13;
+&#13;
+.panel .panel {&#13;
+    height: auto !important;&#13;
+}&#13;
+&#13;
+.attachment-button {&#13;
+  .glyphicon-paperclip {&#13;
+    font-size: 18px;&#13;
+  }&#13;
+}&#13;
+&#13;
+.dropdown {&#13;
+  .glyphicon-menu-hamburger:focus {&#13;
+ 		outline: thin dotted;&#13;
+		outline: 5px auto $input-border-focus;&#13;
+		outline-offset: -2px; &#13;
+	}&#13;
+}&#13;
+&#13;
+.empty-state-wrapper {&#13;
+  width: 100%;&#13;
+  height: 100%;&#13;
+  align-items: center;&#13;
+  display: flex;&#13;
+  flex-direction: column;&#13;
+  padding: 10vh 20px 20px;&#13;
+&#13;
+  .empty-state {&#13;
+    border: 1px solid #e7e9eb;&#13;
+    border-radius: 10px;&#13;
+    max-width: 700px;&#13;
+    padding: 30px 40px 20px;&#13;
+    position: relative;&#13;
+&#13;
+    .empty-state-badge {&#13;
+      top: -36px;&#13;
+      left: 50%;&#13;
+      position: absolute;&#13;
+      height: 72px;&#13;
+      width: 72px;&#13;
+      -webkit-align-items: center;&#13;
+      -ms-flex-align: center;&#13;
+      align-items: center;&#13;
+      border-radius: 100%;&#13;
+      color: #ffffff;&#13;
+      display: -webkit-flex;&#13;
+      display: -ms-flexbox;&#13;
+      display: flex;&#13;
+      font-size: 40px;&#13;
+      -webkit-justify-content: center;&#13;
+      -ms-flex-pack: center;&#13;
+      justify-content: center;&#13;
+      margin-left: -36px;&#13;
+      text-align: center;&#13;
+    }&#13;
+&#13;
+    .empty-state-header {&#13;
+      font-size: 30px;&#13;
+      text-align: center;&#13;
+      color: #343d47;&#13;
+    }&#13;
+&#13;
+    .empty-state-content {&#13;
+      ul {&#13;
+        list-style: disc outside;&#13;
+        margin: 0 0 10px 0;&#13;
+        padding: 0 0 0 30px;&#13;
+      }&#13;
+    }&#13;
+  }&#13;
+}&#13;
+&#13;
+.text-success-alt {&#13;
+	background-color: $state-success-text;&#13;
+}&#13;
+&#13;
+.text-info-alt {&#13;
+	background-color: $state-info-text;&#13;
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -423,7 +434,7 @@
 	data.attachmentSuccessMsg = gs.getMessage("Attachment successfully uploaded");
 
 	//data.isAdmin = gs.hasRightsTo('sp/configure.all/execute', null);
-	data.isAdmin = true;
+	data.isAdmin = gs.getUser().hasRole('admin');
 	data.emptyStateTemplate = options.empty_state_template;
 	data.disableUIActions = options.disableUIActions === "true";
 	data.hideRelatedLists = options.hideRelatedLists || false;
@@ -438,6 +449,34 @@
 			data.sys_id = result.sys_id;
 		}
 
+		if(input.submit_action && input.submit_action == true) {
+			var gr = new GlideRecord(input.table);
+			gr.get(input.sys_id);
+			var msg = "The timesheet " + gr.getValue('number') + " has been ";
+			if(input.action == "submit") {
+				gr.u_state = "submitted";
+				msg += "submitted";
+			}
+			else if(input.action == "approve") {
+				gr.u_state = "approved";
+				msg += "approved";
+			}
+			else if(input.action == "reject") {
+				gr.u_state = "rejected";
+				gr.u_comments = "The timesheet has been rejected with this reason: " + input.reason;
+				msg += "rejected";
+			}
+			else if(input.action == "reprocess") {
+				gr.u_state = "draft";
+				gr.u_comments = "The timsheet has been back to draft because this reason: " + input.reason;
+				msg += "reprocess";
+			}
+			gr.update();
+			input.submit_action = false;
+			input.action = "";
+			gs.addInfoMessage(msg);
+		}
+		
 		if (input.sys_id == '-1')
 			data.isNewRecord = true;
 	} else {
@@ -464,13 +503,21 @@
 	if (!data.sys_id)
 		return;
 
+	//User Details
+	data.userID = gs.getUser().getID();
 
+	//Record Details
 	// 	var rec = $sp.getRecord(data.table, data.sys_id);
 	var rec = new GlideRecord(data.table);
 	rec.get(data.sys_id);
 	data.isValid = rec.isValid() || data.sys_id == "-1";
 	if (!data.isValid)
 		return;
+
+	data.timesheet_number = rec.getValue("number");
+	data.timesheet_approver = rec.getValue("u_timesheet_approver");
+	data.hr_profile = rec.getValue("u_hr_profile");
+	data.state = rec.getValue('u_state');
 
 	data.table = rec.getRecordClassName();
 	data.canWrite = rec.canWrite();
@@ -482,7 +529,7 @@
 		data.timesheet_id = rec.getValue("sys_id");
 		data.widget_timesheet_task = $sp.getWidget("mms-timesheet-task-table", data);
 	}
-	
+
 	// Activity formatter is hardcoded to set specific options
 	for (var f in data.f._formatters) {
 		var fm = data.f._formatters[f];
@@ -512,14 +559,14 @@
         <sys_created_by>ttnhi</sys_created_by>
         <sys_created_on>2019-04-02 03:21:27</sys_created_on>
         <sys_id>bf4c01b14f24730031d578e18110c731</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>MMSoft Timesheet Form</sys_name>
         <sys_package display_value="MMSOFT" source="x_246851_mmsoft">4bcfd37bdb31230000fb7a61399619e2</sys_package>
         <sys_policy/>
         <sys_scope display_value="MMSOFT">4bcfd37bdb31230000fb7a61399619e2</sys_scope>
         <sys_update_name>sp_widget_bf4c01b14f24730031d578e18110c731</sys_update_name>
         <sys_updated_by>ttnhi</sys_updated_by>
-        <sys_updated_on>2019-04-03 02:16:00</sys_updated_on>
+        <sys_updated_on>2019-04-04 03:43:34</sys_updated_on>
         <template><![CDATA[<div ng-if="::!data.isValid && !data.emptyStateTemplate" class="panel panel-default">
   <div class="panel-body wrapper-lg text-center">
     <span ng-if="!data.tableUnsupported">${Record not found}</span>
@@ -547,25 +594,25 @@
 
   <div ng-show="isPageReady" class="panel panel-default" ng-if="::data.f._view.length || !data.hideRelatedLists" >
     <div class="panel-heading" ng-if="data.f.title.length" sp-context-menu="getUIActionContextMenu(event)">
-      	<span class="dropdown m-r-xs" ng-if="(data.isAdmin || getUIActions('context').length > 0) && options.omitHeaderOptions != 'true'">
-            <button aria-label="${Form menu}" class="btn btn-form-menu dropdown-toggle glyphicon glyphicon-menu-hamburger" style="line-height: 1.4em" id="adminMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-            <ul class="dropdown-menu" aria-labelledby="adminMenu">
-              <li ng-if="::data.isAdmin"><a ng-href="/{{::data.f.table}}.do?sys_id={{data.f.sys_id}}&sysparm_view={{data.f.view}}" target="_blank">${Open in platform}</a></li>
-              <li ng-if="::data.isAdmin" class="dropdown-header">${Configure}</li>
-              <li ng-if="::data.isAdmin"><a href="/slushbucket.do?sysparm_referring_url={{adminMenu.encodedPageUrl}}&sysparm_list={{data.f._sections[0].id}}&sysparm_form=section&sysparm_view={{data.f.view}}" target="_blank">${Form Layout}</a></li>
-              <li ng-if="::data.isAdmin"><a href="/slushbucket.do?sysparm_referring_url={{adminMenu.encodedPageUrl}}&sysparm_list={{data.f.table}}&sysparm_form=related_list&sysparm_view={{data.f.view}}" target="_blank">${Related Lists}</a></li>
-              <li ng-if="::data.isAdmin"><a href="?id=lf&table=sys_ui_policy&filter=table%3D{{data.f.table}}%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10" ng-click="openRelatedList($event, {id:'lf', table: 'sys_ui_policy', filter: 'table%3D{{data.f.table}}%5EORtableIN{{data.f.table}},sys_metadata%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10'})">${UI Policies} <span class="badge pull-right" ng-if="f.policy.length">{{f.policy.length}}</span></a></li>
-              <li ng-if="::data.isAdmin"><a href="?id=lf&table=sys_script_client&filter=table%3D{{data.f.table}}%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10" ng-click="openRelatedList($event, {id: 'lf', table: 'sys_script_client', filter: 'table%3D{{data.f.table}}%5EORtableIN{{data.f.table}},sys_metadata%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10'})">${Client Scripts} <span class="badge pull-right" ng-if="adminMenu.getClientScriptCount()">{{adminMenu.getClientScriptCount()}}</span></a></li>
-              <li ng-if="getUIActions('context').length > 0 &&  data.isAdmin" role="separator" class="divider"></li>
-              <li ng-repeat="action in getUIActions('context')"><a href="" ng-click="triggerUIAction(action)">{{action.name}}</a></li>
-              <li ng-if="::data.isAdmin || getUIActions('context').length > 0" role="separator" class="divider"></li>
-              <li><a target="_new" href="/{{data.f.table}}.do?PDF&sys_id={{data.sys_id}}&sysparm_view={{data.f.view}}">${Export to PDF}</a></li>
-              <li><a target="_new" href="/{{data.f.table}}.do?PDF&landscape=true&sys_id={{data.sys_id}}&sysparm_view={{data.f.view}}">${Export to PDF (landscape)}</a></li>
-            </ul>
-        </span>
+      <span class="dropdown m-r-xs" ng-if="(data.isAdmin || getUIActions('context').length > 0) && options.omitHeaderOptions != 'true'">
+        <button aria-label="${Form menu}" class="btn btn-form-menu dropdown-toggle glyphicon glyphicon-menu-hamburger" style="line-height: 1.4em" id="adminMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+        <ul class="dropdown-menu" aria-labelledby="adminMenu">
+          <li ng-if="::data.isAdmin"><a ng-href="/{{::data.f.table}}.do?sys_id={{data.f.sys_id}}&sysparm_view={{data.f.view}}" target="_blank">${Open in platform}</a></li>
+          <li ng-if="::data.isAdmin" class="dropdown-header">${Configure}</li>
+          <li ng-if="::data.isAdmin"><a href="/slushbucket.do?sysparm_referring_url={{adminMenu.encodedPageUrl}}&sysparm_list={{data.f._sections[0].id}}&sysparm_form=section&sysparm_view={{data.f.view}}" target="_blank">${Form Layout}</a></li>
+          <li ng-if="::data.isAdmin"><a href="/slushbucket.do?sysparm_referring_url={{adminMenu.encodedPageUrl}}&sysparm_list={{data.f.table}}&sysparm_form=related_list&sysparm_view={{data.f.view}}" target="_blank">${Related Lists}</a></li>
+          <li ng-if="::data.isAdmin"><a href="?id=lf&table=sys_ui_policy&filter=table%3D{{data.f.table}}%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10" ng-click="openRelatedList($event, {id:'lf', table: 'sys_ui_policy', filter: 'table%3D{{data.f.table}}%5EORtableIN{{data.f.table}},sys_metadata%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10'})">${UI Policies} <span class="badge pull-right" ng-if="f.policy.length">{{f.policy.length}}</span></a></li>
+          <li ng-if="::data.isAdmin"><a href="?id=lf&table=sys_script_client&filter=table%3D{{data.f.table}}%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10" ng-click="openRelatedList($event, {id: 'lf', table: 'sys_script_client', filter: 'table%3D{{data.f.table}}%5EORtableIN{{data.f.table}},sys_metadata%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10'})">${Client Scripts} <span class="badge pull-right" ng-if="adminMenu.getClientScriptCount()">{{adminMenu.getClientScriptCount()}}</span></a></li>
+          <li ng-if="getUIActions('context').length > 0 &&  data.isAdmin" role="separator" class="divider"></li>
+          <li ng-repeat="action in getUIActions('context')"><a href="" ng-click="triggerUIAction(action)">{{action.name}}</a></li>
+          <li ng-if="::data.isAdmin || getUIActions('context').length > 0" role="separator" class="divider"></li>
+          <li><a target="_new" href="/{{data.f.table}}.do?PDF&sys_id={{data.sys_id}}&sysparm_view={{data.f.view}}">${Export to PDF}</a></li>
+          <li><a target="_new" href="/{{data.f.table}}.do?PDF&landscape=true&sys_id={{data.sys_id}}&sysparm_view={{data.f.view}}">${Export to PDF (landscape)}</a></li>
+        </ul>
+      </span>
       <span class="panel-title" aria-label="{{data.f.title}}">{{data.f.title}}</span> <span ng-if="::options.showFormView == 'true' && data.f.view != ''">[{{data.f.view_title}} view]</span>
       <div ng-if="::attachmentHandler && data.canAttach" title="{{::data.addAttachmentMsg}}" class="pull-right attachment-button">
-      	<sp-attachment-button></sp-attachment-button>
+        <sp-attachment-button></sp-attachment-button>
       </div>
     </div>
     <div class="panel-body">
@@ -586,7 +633,7 @@
         <sp-model form_model="data.f" mandatory="mandatory"></sp-model>
       </div>
       <div>
-      	<sp-widget widget="data.widget_timesheet_task"></sp-widget>
+        <sp-widget widget="data.widget_timesheet_task"></sp-widget>
       </div>
       <!-- UI Action Links -->
       <div ng-if="getUIActions('link').length > 0">
@@ -615,7 +662,10 @@
     <div class="panel-footer">
       <button ng-click="triggerUIAction(action)" ng-disabled="submitting" ng-repeat="action in getUIActions('button')" class="btn action-btn" ng-class="::getButtonClass(action)" gsft_id="{{::action.sys_id}}">{{action.name}}</button>
       <span>{{status}}</span>
-      <button ng-if="getPrimaryAction()" type="submit" ng-click="triggerUIAction(getPrimaryAction())" ng-disabled="submitting" class="btn btn-primary action-btn pull-right" gsft_id="{{::getPrimaryAction().sys_id ? getPrimaryAction().sys_id : ''}}">${Save} <span ng-if="saveButtonSuffix">(${{{saveButtonSuffix}}})</span></button>
+      <button ng-if="getPrimaryAction()" type="submit" ng-click="triggerUIAction(getPrimaryAction())" ng-disabled="submitting" class="btn btn-primary action-btn {{isButtonActive}}" gsft_id="{{::getPrimaryAction().sys_id ? getPrimaryAction().sys_id : ''}}">${Save} <span ng-if="saveButtonSuffix">(${{{saveButtonSuffix}}})</span></button>
+      <mms-timesheet-submit-button />
+      <mms-timesheet-approve-button />
+      <mms-timesheet-reject-button />
       <div style="clear: both;"></div>
       <div ng-if="mandatory.length" class="alert alert-info" style="margin-top: .5em" aria-live="polite" aria-atomic="true">
         <span ng-if="mandatory.length > 0">${Required information} </span>
